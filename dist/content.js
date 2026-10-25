@@ -417,9 +417,19 @@ window.DCMUN = {
     {
       "code": "Crisis",
       "name": "Crisis Committee",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Adil Sahibzada",
+      "deputyChairs": ["Arham Shaikh","Ayma Hadi"],
       "room": "",
+      "guides": [
+        {
+          "title": "Background Guide",
+          "pdf": ""
+        },
+        {
+          "title": "Direction Guide",
+          "pdf": ""
+        }
+      ],
       "issues": [
         {
           "title": "Addressing the Emergence of a High-Infection Rate Pandemic Originating in Australia",
@@ -431,9 +441,104 @@ window.DCMUN = {
   ],
   "executives": [
     {
-      "name": "",
-      "role": "",
-      "message": ""
+      "name": "Adhithi Karthikeyan",
+      "role": "Secretary General",
+      "message": "Hi, I'm Adhiti, and I'm honored to serve as SG for DCMUN XVIII!! I can't wait to make this conference one of the best yet, and welcome everyone to the amazing experience of DCMUN."
+    },
+    {
+      "name": "Mary Kurian",
+      "role": "Secretary General",
+      "message": "Hello everyone! My name is Mary Kurian, and I'm incredibly excited to be serving as your Secretary General for this year's MUN. I truly believe that change begins with a voice, and together, we can turn those voices into action. I look forward to working with all of you and making this MUN an unforgettable experience."
+    },
+    {
+      "name": "Jianne Lee",
+      "role": "Deputy Secretary General",
+      "message": "Hi everyone! I’m Jianne Lee, one of your Deputy Secretary Generals for this year’s conference. I’m incredibly excited to join this year’s MUN team and look forward to fostering engaging debate and create an unforgettable MUN experience for all of you!"
+    },
+    {
+      "name": "Anushka Gudavalli",
+      "role": "Deputy Secretary General",
+      "message": "Hi, I'm Anushka, l'll be your DSG this year. I'm excited to work with the exec team to make this year's DCMUN the best yet!"
+    },
+    {
+      "name": "Yushi Zhang",
+      "role": "President of the General Assembly",
+      "message": "Hello, I’m Yushi Zhang. I can’t wait to see everyone at the conference and present our resolution issues to all delegates. I’ll also ensure that every committee session runs smoothly. I look forward to reviewing your applications!"
+    },
+    {
+      "name": "Akshara Papineni",
+      "role": "Deputy President of the General Assembly",
+      "message": "Hi! I’m Akshara and my job lies in making the committees in this conference as educational and fun as possible! Hope to see you in the conference soon!"
+    },
+    {
+      "name": "Amna Waqar",
+      "role": "Deputy President of the General Assembly",
+      "message": "I am honoured to serve as your Deputy President of the General Assembly this year. I look forward to making DCMUN XVIII one of the best conferences yet!"
+    },
+    {
+      "name": "Shirin Dhankhar",
+      "role": "Head of Press",
+      "message": "Hello, My name is Shirin and I’ll be your Head of Press for this year’s conference! I am so excited to be working with everyone, creating new content, and making it a wonderful conference. See you there!"
+    },
+    {
+      "name": "Aryana Udayar",
+      "role": "Deputy Head of Press",
+      "message": "Hello! I’m Aryana, one of your Deputy Heads of Press for this year’s conference! I am so excited to make this year’s conference the most memorable one yet!"
+    },
+    {
+      "name": "Lara Skindhoj",
+      "role": "Deputy Head of Press",
+      "message": "Hi everyone! My name is Lara Skindhøj and I will be your deputy head of press for DCMUN 2026, I’m so excited to see everyone talk about the important topics issued by DCMUN and to hear everyone’s input. Hope to see you there!"
+    },
+    {
+      "name": "Anvita Chaitanya",
+      "role": "President of International Court of Justice",
+      "message": "Hi, my name's Anvita, and as President of the ICJ, l'm really excited to support and challenge this year's advocates, while helping create an engaging and memorable experience for everyone involved. I'm looking forward to making this our best ICJ conference yet!"
+    },
+    {
+      "name": "Vedika Kumar",
+      "role": "Deputy President of International Court of Justice",
+      "message": "I'm thrilled to be your Vice President of ICJ this year! Me and the rest of the ICJ team hope to make this year's DCMUN conference unforgettable for you guys!"
+    },
+    {
+      "name": "Fatima Imran",
+      "role": "Deputy President of International Court of Justice",
+      "message": "Hi, my name is Fatima and I'm this year's Deputy Head of ICJ! I'm looking forward to working with our advocates for some interesting cases. See you at the conference!"
+    },
+    {
+      "name": "John Paul Ribeiru",
+      "role": "Head of Training - Head of IT",
+      "message": "Hey, it's JP! As the Head of Training, I work with the team to try to create sessions that are as enjoyable as possible, so we hope you have fun in the club and at our conference!"
+    },
+    {
+      "name": "Zuhayr Siddique",
+      "role": "Deputy Head of Training - Head of IT",
+      "message": "My name is Zuhayr, and as Deputy Head of Training I wish to make sure all of our delegates feel prepared and confident for MUN conferences."
+    },
+    {
+      "name": "Maria Ali",
+      "role": "Deputy Head of Training",
+      "message": "As Deputy Head of Training, I hope to make training sessions fun, and welcoming while helping delegates, whether they are completely new to MUN or already have experience. I'm excited to work with the members this year, support everyone, and help make DCMUN an enjoyable and memorable experience!"
+    },
+    {
+      "name": "Arianna Martella",
+      "role": "Head of Admin",
+      "message": "As your Head of Admin, I aspire to make this year’s conference run as smoothly as possible and dedicate myself supporting and organizing this conference!"
+    },
+    {
+      "name": "Emaan Yaqoob",
+      "role": "Deputy Head of Admin",
+      "message": "Hi, I’m Emaan and I’m your Deputy Head of Admin this year. I look forward to making this year’s conference a memorable experience for everyone. If you see me around, don’t be afraid to say hi!"
+    },
+    {
+      "name": "Shiza Sharif",
+      "role": "Deputy Head of Admin",
+      "message": "Hi, I am so excited to be a part of DCMUN as your deputy head of admin. I can’t wait to work with all of you, let’s make this conference a memorable one."
+    },
+    {
+      "name": "Sienna Al-Kassem",
+      "role": "Head of DC-IMPACT",
+      "message": "I'm Sienna Elsa, I am the head of DCIMPACT. I am so happy I've managed to come through and become an executive this year! I've always been invested in making change to the world and MUN is something I'm so very passionate about. I hope we all can bring happy and positive energy to the community and enjoy DCMUN."
     }
   ],
   "schedule": [

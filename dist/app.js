@@ -11,8 +11,10 @@ const themeAuthor=document.querySelector('#theme-message-author');
 if(themeMessage.name?.trim()){themeAuthor.textContent=`${themeMessage.name.trim()} · Secretary-General`;themeAuthor.hidden=false;}
 const list=document.querySelector('#committee-list');
 for(const c of data.committees){
+ const resources=c.guides||c.issues;
+ const resourceType=c.guides?'guide':'issue';
  const d=el('details','committee');
- const summary=el('summary');summary.append(el('span','code',c.code),el('span','committee-name',c.name),el('span','issue-count',`${c.issues.length} issue${c.issues.length===1?'':'s'}`),el('span','plus','＋'));
+ const summary=el('summary');summary.append(el('span','code',c.code),el('span','committee-name',c.name),el('span','issue-count',`${resources.length} ${resourceType}${resources.length===1?'':'s'}`),el('span','plus','＋'));
  const body=el('div','committee-body');
  const deputies=(c.deputyChairs||[]).filter(name=>name.trim());
  const chairs=el('dl','chairs');
@@ -20,8 +22,20 @@ for(const c of data.committees){
  chairRow('Head Chair',c.headChair?.trim()||'To be announced.');
  chairRow(deputies.length===1?'Deputy Chair':'Deputy Chairs',deputies.length?deputies.join(' · '):'To be announced.');
  if(c.room)chairRow('Room',c.room);body.append(chairs);
- c.issues.forEach((issue,i)=>{const row=el('div','issue');row.append(el('span','',String(i+1).padStart(2,'0')));const copy=el('div');copy.append(el('h3','',issue.title));if(issue.chair)copy.append(el('p','',`Report by ${issue.chair}`));const url=safeUrl(issue.pdf);copy.append(url?link('Read research report · PDF ↗',url,'pdf-link'):el('span','pending','Report not yet available'));row.append(copy);body.append(row);});
- d.append(summary,body);d.dataset.search=[c.code,c.name,c.headChair||'',...deputies,...c.issues.map(i=>i.title+' '+i.chair)].join(' ').toLowerCase();list.append(d);
+ if(c.guides){
+  c.issues.forEach(issue=>body.append(el('h3','',issue.title)));
+ }
+ resources.forEach((resource,i)=>{
+  const row=el('div','issue');row.append(el('span','',String(i+1).padStart(2,'0')));
+  const copy=el('div');copy.append(el('h3','',resource.title));
+  if(c.guides)copy.append(el('p','',`Prepared by all ${c.name} chairs.`));
+  else if(resource.chair)copy.append(el('p','',`Report by ${resource.chair}`));
+  const url=safeUrl(resource.pdf);
+  const label=c.guides?resource.title.toLowerCase():'research report';
+  copy.append(url?link(`Read ${label} · PDF ↗`,url,'pdf-link'):el('span','pending',c.guides?`${resource.title} not yet available`:'Report not yet available'));
+  row.append(copy);body.append(row);
+ });
+ d.append(summary,body);d.dataset.search=[c.code,c.name,c.headChair||'',...deputies,...c.issues.map(i=>i.title+' '+(i.chair||'')),...(c.guides||[]).map(guide=>guide.title)].join(' ').toLowerCase();list.append(d);
 }
 const count=document.querySelector('#count');const search=document.querySelector('#search');
 function filter(){const q=search.value.trim().toLowerCase();let total=0;for(const row of list.children){row.hidden=!row.dataset.search.includes(q);if(!row.hidden)total++;}count.textContent=`${total} of ${data.committees.length} committees`;document.querySelector('#no-results').hidden=total!==0;}

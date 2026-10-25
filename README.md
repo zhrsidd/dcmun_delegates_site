@@ -26,6 +26,8 @@ Use `deputyChairs: []` when no deputies have been added. Blank names are ignored
 
 Each issue has `title`, `chair` and `pdf`. Set `pdf` to an HTTPS link or a relative file path such as `assets/reports/ga1-issue-1.pdf`, and place the PDF there. Empty links render a non-clickable “Not yet available” label. Use public PDF links if hosting elsewhere; the website does not change Drive permissions. Add committees by copying an existing object.
 
+The Crisis Committee uses a `guides` array instead of issue research reports. It contains the Background Guide and Direction Guide, each with a `title` and `pdf`. Both guides are credited to all Crisis Committee chairs. Add their PDF links in `guides`; the crisis scenario stays in `issues`.
+
 ### Secretary-General theme message
 
 Directly beneath `theme` in `dist/content.js`, fill in:
