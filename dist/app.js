@@ -44,7 +44,7 @@ data.schedule.forEach((day,i)=>{const card=el('article','day');const top=el('div
 const mapImage=safeUrl(data.map.image);if(mapImage){const panel=document.querySelector('#map-panel');panel.replaceChildren();const a=link('',mapImage);const img=el('img');img.src=mapImage;img.alt='Official Doha College campus map showing conference locations';a.append(img);panel.append(a);}const mapPdf=safeUrl(data.map.pdf);if(mapPdf)document.querySelector('#map-links').append(link('Open campus map · PDF ↗',mapPdf,'pdf-link'));
 const menu=document.querySelector('#menu'),nav=document.querySelector('#nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});
 
-// Native horizontal scrolling supports touch swipes and trackpads without autoplay.
+// Native horizontal scrolling supports touch swipes, trackpads and timed rotation.
 const executiveTrack=document.querySelector('#executive-track');
 const executives=(data.executives||[]).filter(person=>person.name?.trim());
 const executiveControls=document.querySelector('#executive-controls');
@@ -59,11 +59,23 @@ executives.forEach((person,i)=>{
  card.setAttribute('role','group');card.setAttribute('aria-roledescription','slide');
  card.setAttribute('aria-label',`${i+1} of ${executives.length}: ${person.name}`);
  card.append(el('p','executive-role',person.role||'Executive team'),el('h3','',person.name));
- if(person.message)card.append(el('p','executive-message',person.message));
+ if(person.message)card.append(el('p','executive-message',`“${person.message}”`));
  executiveTrack.append(card);
 });
 if(executives.length){
  let active=0;
+ const carousel=document.querySelector('#executives');
+ const rotationButton=document.querySelector('#executive-rotation');
+ const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+ let paused=reducedMotion.matches,hovered=false,focused=false,timer;
+ const syncRotation=()=>{
+  clearTimeout(timer);
+  const rotating=!paused&&!hovered&&!focused&&!document.hidden&&executives.length>1;
+  rotationButton.textContent=paused?'Play':'Pause';
+  rotationButton.setAttribute('aria-label',paused?'Start automatic rotation':'Pause automatic rotation');
+  executiveStatus.setAttribute('aria-live',rotating?'off':'polite');
+  if(rotating)timer=setTimeout(()=>{moveExecutive(1,true);syncRotation();},5000);
+ };
  const updateExecutive=()=>{
   const left=executiveTrack.getBoundingClientRect().left;
   const cards=[...executiveTrack.children];
@@ -71,9 +83,10 @@ if(executives.length){
   previousExecutive.disabled=active===0;nextExecutive.disabled=active===executives.length-1;
   executiveStatus.textContent=`${active+1} / ${executives.length}`;
  };
- const moveExecutive=direction=>{
-  const card=executiveTrack.children[Math.max(0,Math.min(executives.length-1,active+direction))];
-  executiveTrack.scrollTo({left:executiveTrack.scrollLeft+card.getBoundingClientRect().left-executiveTrack.getBoundingClientRect().left,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+ const moveExecutive=(direction,wrap=false)=>{
+  const index=wrap?(active+direction+executives.length)%executives.length:Math.max(0,Math.min(executives.length-1,active+direction));
+  const card=executiveTrack.children[index];
+  executiveTrack.scrollTo({left:executiveTrack.scrollLeft+card.getBoundingClientRect().left-executiveTrack.getBoundingClientRect().left,behavior:reducedMotion.matches?'instant':'smooth'});
  };
  previousExecutive.addEventListener('click',()=>moveExecutive(-1));
  nextExecutive.addEventListener('click',()=>moveExecutive(1));
@@ -81,5 +94,13 @@ if(executives.length){
   if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();moveExecutive(event.key==='ArrowRight'?1:-1);}
  });
  executiveTrack.addEventListener('scroll',updateExecutive,{passive:true});
- window.addEventListener('resize',updateExecutive);updateExecutive();
+ rotationButton.addEventListener('click',()=>{paused=!paused;syncRotation();});
+ carousel.addEventListener('mouseenter',()=>{hovered=true;syncRotation();});
+ carousel.addEventListener('mouseleave',()=>{hovered=false;syncRotation();});
+ carousel.addEventListener('focusin',()=>{focused=true;syncRotation();});
+ carousel.addEventListener('focusout',event=>{focused=carousel.contains(event.relatedTarget);syncRotation();});
+ executiveTrack.addEventListener('pointerdown',()=>{paused=true;syncRotation();});
+ document.addEventListener('visibilitychange',syncRotation);
+ reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches)paused=true;syncRotation();});
+ window.addEventListener('resize',updateExecutive);updateExecutive();syncRotation();
 }

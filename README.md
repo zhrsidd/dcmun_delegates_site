@@ -60,7 +60,7 @@ Near the end of `dist/content.js`, fill in the blank entry in `executives`. Copy
 ],
 ```
 
-Entries appear in the order listed. Entries without a name stay hidden. Until names are added, the section shows a short coming-soon message. Visitors can swipe or scroll through the cards, use the arrow buttons, or focus the cards and press the left/right arrow keys. There is no automatic rotation.
+Entries appear in the order listed. Entries without a name stay hidden. Until names are added, the section shows a short coming-soon message. Visitors can swipe or scroll through the cards, use the arrow buttons, or focus the cards and press the left/right arrow keys. Cards automatically advance every five seconds and loop to the beginning. Rotation pauses while hovered, focused, or in a hidden tab; swiping pauses it until Play is selected. A Play/Pause button controls rotation. Reduced-motion preferences disable automatic rotation initially. Messages appear in italics and quotation marks.
 
 ### Map and schedule
 
