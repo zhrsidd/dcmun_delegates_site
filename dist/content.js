@@ -1,11 +1,16 @@
 // Edit conference content here. Empty PDF fields show “Not yet available”.
 // Committees: headChair: "Full name", deputyChairs: ["Full name", "Full name"].
 // Add as many deputy names as needed; use [] when there are none.
+// Theme message: add the Secretary-General name and message in themeMessage.
 // Executives: copy an entry and fill in name, role and a short message.
 // Blank executive entries are hidden; cards appear in the order listed.
 window.DCMUN = {
   "edition": "XVIII",
   "theme": "",
+  "themeMessage": {
+    "name": "",
+    "message": ""
+  },
   "welcome": "Doha College Model United Nations (DCMUN) is hosted at Doha College’s Al Wajba campus. DCMUN XVIII takes place from 5 to 7 November 2026. The Saturday afternoon programme takes place at the Mondrian Hotel.",
   "map": {
     "image": "",

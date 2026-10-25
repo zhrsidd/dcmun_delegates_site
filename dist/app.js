@@ -5,6 +5,10 @@ const safeUrl=value=>{if(!value)return null;try{const u=new URL(value,location.h
 const link=(text,url,cls)=>{const a=el('a',cls,text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
 document.querySelector('#welcome').textContent=data.welcome;
 document.querySelector('#theme').textContent=data.theme||'To be announced.';
+const themeMessage=data.themeMessage||{};
+document.querySelector('#theme-message-copy').textContent=themeMessage.message?.trim()||'A message about our conference theme will be shared here soon.';
+const themeAuthor=document.querySelector('#theme-message-author');
+if(themeMessage.name?.trim()){themeAuthor.textContent=`${themeMessage.name.trim()} · Secretary-General`;themeAuthor.hidden=false;}
 const list=document.querySelector('#committee-list');
 for(const c of data.committees){
  const d=el('details','committee');

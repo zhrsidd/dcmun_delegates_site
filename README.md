@@ -26,6 +26,19 @@ Use `deputyChairs: []` when no deputies have been added. Blank names are ignored
 
 Each issue has `title`, `chair` and `pdf`. Set `pdf` to an HTTPS link or a relative file path such as `assets/reports/ga1-issue-1.pdf`, and place the PDF there. Empty links render a non-clickable “Not yet available” label. Use public PDF links if hosting elsewhere; the website does not change Drive permissions. Add committees by copying an existing object.
 
+### Secretary-General theme message
+
+Directly beneath `theme` in `dist/content.js`, fill in:
+
+```js
+"themeMessage": {
+  "name": "Secretary-General name",
+  "message": "Your short message about the conference theme."
+},
+```
+
+The message appears beneath the theme. Until a message is supplied, a coming-soon note fills this space. The name is optional. Use `\n\n` inside the message string to separate paragraphs.
+
 ### Meet the executives
 
 Near the end of `dist/content.js`, fill in the blank entry in `executives`. Copy the object for each additional person, separated by commas:
@@ -64,3 +77,15 @@ Theme, campus map, session allocations and confirmed chair-to-committee assignme
 `generate.py` records the one-time import; do not re-run it after editing content.js because it regenerates that file.
 
 Mondrian Doha has a separate Google Maps embed in `dist/index.html`, alongside a direct Maps link. Update its query there if the venue changes.
+
+## Pushing updates
+
+From this project folder, after saving your changes:
+
+```sh
+git add .
+git commit -m "Update conference content"
+git push origin main
+```
+
+GitHub Pages automatically publishes the update once the deployment workflow completes.
