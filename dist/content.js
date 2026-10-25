@@ -20,8 +20,8 @@ window.DCMUN = {
     {
       "code": "GA1",
       "name": "Disarmament and Weapons",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Abhijith Ajesh Kumar",
+      "deputyChairs": ["Joudi Hamed"],
       "room": "",
       "issues": [
         {
@@ -44,8 +44,8 @@ window.DCMUN = {
     {
       "code": "GA2",
       "name": "Economic and Financial Committee",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Ahmad Elwadiya",
+      "deputyChairs": ["Lindelwa Mngomezulu","Mohammed Maaz"],
       "room": "",
       "issues": [
         {
@@ -68,8 +68,8 @@ window.DCMUN = {
     {
       "code": "GA3",
       "name": "Humanitarian and Cultural",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Muhammad Armaghan",
+      "deputyChairs": ["Malak Yagoub","Farida Taher"],
       "room": "",
       "issues": [
         {
@@ -87,8 +87,8 @@ window.DCMUN = {
     {
       "code": "GA4",
       "name": "Special Political and Decolonization",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Helen Mangue",
+      "deputyChairs": ["Yusef Elaffandi","Maryam Ahmed"],
       "room": "",
       "issues": [
         {
@@ -106,8 +106,8 @@ window.DCMUN = {
     {
       "code": "GA5",
       "name": "Administration and Budgetary Matters",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Rishi Sharma",
+      "deputyChairs": ["Izyan Mohammed","Lehara Ranasinghe"],
       "room": "",
       "issues": [
         {
@@ -125,8 +125,8 @@ window.DCMUN = {
     {
       "code": "GA6",
       "name": "Legal",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Arni Mahendra",
+      "deputyChairs": ["Yousra Abdelraheem","Zaha Gusbi"],
       "room": "",
       "issues": [
         {
@@ -149,8 +149,8 @@ window.DCMUN = {
     {
       "code": "ECOSOC",
       "name": "Economic and Social (ECOSOC)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Aisha Al Thani",
+      "deputyChairs": ["Haneefa Hussain","Myesha Sheikh"],
       "room": "",
       "issues": [
         {
@@ -173,8 +173,8 @@ window.DCMUN = {
     {
       "code": "HRC",
       "name": "Human Rights Council (HRC)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Omar Abdulhameed",
+      "deputyChairs": ["Ahmad Alizada","Manha Khan"],
       "room": "",
       "issues": [
         {
@@ -197,8 +197,8 @@ window.DCMUN = {
     {
       "code": "SC",
       "name": "Security Council",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Maria Ali",
+      "deputyChairs": ["Syeda Habiba","Nayef Khan"],
       "room": "",
       "issues": [
         {
@@ -216,8 +216,8 @@ window.DCMUN = {
     {
       "code": "HSC Recent",
       "name": "HSC RECENT",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Zakarya Aldeeb",
+      "deputyChairs": ["Isla Melville","Marya Al-Sumaiti"],
       "room": "",
       "issues": [
         {
@@ -235,8 +235,8 @@ window.DCMUN = {
     {
       "code": "HSC Ancient",
       "name": "HSC ANCIENT",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Afsha Gumani",
+      "deputyChairs": ["Zaeem Kodumayil","Ayube Ghadamsi"],
       "room": "",
       "issues": [
         {
@@ -259,8 +259,8 @@ window.DCMUN = {
     {
       "code": "WHO",
       "name": "World Health Organisation",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Niharika Bisht",
+      "deputyChairs": ["Niranjana Rajeev","Mohammed Batley"],
       "room": "",
       "issues": [
         {
@@ -283,8 +283,8 @@ window.DCMUN = {
     {
       "code": "UNICEF",
       "name": "United Nations Children's Fund (UNICEF)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Toleen Afaneh",
+      "deputyChairs": ["Sienna Al-Kassem","Aarisha Sharma"],
       "room": "",
       "issues": [
         {
@@ -307,8 +307,8 @@ window.DCMUN = {
     {
       "code": "WFP",
       "name": "WFP (World Food Programme)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Simra Hasan Rashid",
+      "deputyChairs": ["Zarina Geada","Megha Mattamana"],
       "room": "",
       "issues": [
         {
@@ -326,8 +326,8 @@ window.DCMUN = {
     {
       "code": "UNDP",
       "name": "UNDP (United Nations Development Program)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Samrah Fatima",
+      "deputyChairs": ["Adrian Chaaban","Adam Khalil"],
       "room": "",
       "issues": [
         {
@@ -350,8 +350,8 @@ window.DCMUN = {
     {
       "code": "UNIDIR",
       "name": "UNIDIR (United Nations Institute for Disarmament Research)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Mohammed Zafar Khan",
+      "deputyChairs": ["Faris Zafar","Ahmed Abaza"],
       "room": "",
       "issues": [
         {
@@ -374,8 +374,8 @@ window.DCMUN = {
     {
       "code": "SDG 9",
       "name": "SDG 9 (Industry, Innovation and Infrastructure)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Aina Irfan",
+      "deputyChairs": ["Chaeyoung Yun","Meera Nambiar"],
       "room": "",
       "issues": [
         {
@@ -398,8 +398,8 @@ window.DCMUN = {
     {
       "code": "SDG 6",
       "name": "SDG 6 (Clean Water and Sanitation)",
-      "headChair": "",
-      "deputyChairs": [],
+      "headChair": "Leila Abbas",
+      "deputyChairs": ["Ayaan Shakeel","Zara Zaheer"],
       "room": "",
       "issues": [
         {
