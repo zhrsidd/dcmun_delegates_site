@@ -2,6 +2,12 @@
 
 Buildless HTML, CSS and JavaScript. Deploy the `dist` directory to any static host. No install, accounts, database or build command required.
 
+## Hosting
+
+Live site: https://zhrsidd.github.io/dcmun_delegates_site/
+
+GitHub Pages publishes the `dist` directory through `.github/workflows/pages.yml`. Push changes to `main` to update the live site; progress is visible in the repository’s Actions tab. You can also run the workflow manually.
+
 ## Editing
 
 - `dist/content.js`: welcome, theme, all committees, head/deputy chair names, executive messages, rooms, reports, schedule and map.
