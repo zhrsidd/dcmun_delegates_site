@@ -60,8 +60,8 @@ executives.forEach((person,i)=>{
  card.setAttribute('aria-label',`${i+1} of ${executives.length}: ${person.name}`);
  const photo=el('div','executive-photo');
  const photoUrl=safeUrl(person.photo);
- if(photoUrl){const image=el('img');image.src=photoUrl;image.alt=`Headshot of ${person.name}`;image.loading='lazy';photo.append(image);}
- else{photo.setAttribute('aria-label',`Headshot placeholder for ${person.name}`);photo.append(el('span','', 'Add headshot'));}
+ if(photoUrl){const image=el('img');image.alt=`Headshot of ${person.name}`;image.loading='lazy';image.decoding='async';image.addEventListener('load',()=>photo.classList.add('is-loaded'),{once:true});photo.append(image);image.src=photoUrl;}
+ else{photo.setAttribute('aria-label',`Headshot placeholder for ${person.name}`);photo.append(el('span','', 'Add headshot'));photo.classList.add('is-loaded');}
  const copy=el('div','executive-copy');
  copy.append(el('p','executive-role',person.role||'Executive team'),el('h3','',person.name));
  if(person.message)copy.append(el('p','executive-message',`“${person.message}”`));

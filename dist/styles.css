@@ -17,7 +17,7 @@
 
 /* Executive headshot area; add a photo path to an executive in content.js to replace the placeholder. */
 .executive-card{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:28px;align-items:start}
-.executive-photo{width:160px;height:190px;display:grid;place-items:center;overflow:hidden;border:1px dashed #8ba9d0;border-radius:6px;background:#eaf1fc;color:var(--muted);font-size:12px}
+.executive-photo{width:160px;height:190px;display:grid;place-items:center;overflow:hidden;border:1px dashed #8ba9d0;border-radius:6px;background:#eaf1fc;color:var(--muted);font-size:12px;opacity:0;visibility:hidden;transition:opacity .18s ease,visibility .18s ease}.executive-photo.is-loaded{opacity:1;visibility:visible}
 .executive-photo img{width:100%;height:100%;display:block;object-fit:cover}
 .executive-photo img[src$="/zuhayr.jpg"]{object-position:center top}
 .executive-copy{min-width:0}
