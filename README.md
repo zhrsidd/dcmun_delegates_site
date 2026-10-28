@@ -66,7 +66,7 @@ Entries appear in the order listed. Entries without a name stay hidden. Until na
 
 Set `map.image` to the official map image path and `map.pdf` to a PDF path. Empty fields show an explicitly labeled placeholder, not a fictional school map. Set `theme` when confirmed. The About paragraph summarizes confirmed conference dates and venues.
 
-To add session details, add objects with `time`, `title`, and `venue` to the relevant day’s `events` array. Times are Qatar local time. The current data contains only the conference windows supplied in the official PDF.
+To add session details, add objects with `time`, `title`, and `venue` to the relevant day’s `events` array. Times are Qatar local time. The current data contains the confirmed detailed programme for 5–7 November 2026, including registration, breaks and travel time.
 
 To preview: `python -m http.server 8080 --directory dist`, then open http://localhost:8080. To edit locally you can also open `dist/index.html` directly.
 
@@ -74,7 +74,9 @@ To preview: `python -m http.server 8080 --directory dist`, then open http://loca
 
 Conference dates, venues and all 48 issues across 19 committees: “Conference Schedule + Committee Issues”, DCMUN Central Folder → 2026/2027 → DCMUN XVIII (Drive ID `174Mu4cyyh-IWj06ykGx0ws7hbkVsufyJ`). Retrieved 25 October 2026. Source transcript retained in `source-reference.txt`. Logo: Central Folder “DCMUN logo.jpg” (`1kyU4u_DJDJCubRL2id8CeeK6jisNTBS6`).
 
-Theme, campus map, session allocations and confirmed chair-to-committee assignments were not established, so remain labeled placeholders. Internal student records and report progress tracker data are not included in the public site. Design reference: https://github.com/zhrsidd/MUNOS/blob/main/docs/BRAND.md — official palette, Manrope headings, DM Sans body, hairline sections and minimal decoration.
+Detailed schedule: “Precise Schedule” tab (`t.0`) in the Google Doc titled “Rough Schedule” (Drive ID `1VPC1QiEHUdl1T7xY_3LDT6VJVn_nqt84TfUAjQClL7k`), retrieved 28 October 2026. The organiser confirmed that this schedule is final despite the document title. Dates and venues are supplied by its “General Schedule” tab. The 20 event titles and intervals follow the precise tab; times are displayed in 24-hour Qatar local time.
+
+Theme and campus map remain labeled placeholders. Committee room allocations are not yet supplied. Internal student records and report progress tracker data are not included in the public site. Design reference: https://github.com/zhrsidd/MUNOS/blob/main/docs/BRAND.md — official palette, Manrope headings, DM Sans body, hairline sections and minimal decoration.
 
 `generate.py` records the one-time import; do not re-run it after editing content.js because it regenerates that file.
 

@@ -547,8 +547,18 @@ window.DCMUN = {
       "date": "5 November",
       "events": [
         {
-          "time": "15:45–19:00",
-          "title": "Conference programme",
+          "time": "15:45–16:00",
+          "title": "Registration",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "16:00–17:00",
+          "title": "Opening Ceremony",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "17:00–19:00",
+          "title": "Committee sessions (+donuts)",
           "venue": "Doha College · Al Wajba Campus"
         }
       ]
@@ -558,8 +568,43 @@ window.DCMUN = {
       "date": "6 November",
       "events": [
         {
-          "time": "08:45–17:30",
-          "title": "Conference programme",
+          "time": "08:45–09:00",
+          "title": "Registration",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "09:00–11:30",
+          "title": "Committee sessions",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "11:30–12:00",
+          "title": "Prayer",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "12:00–13:30",
+          "title": "Committee sessions",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "13:30–14:30",
+          "title": "Lunch",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "14:30–16:00",
+          "title": "Committee sessions",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "16:00–16:30",
+          "title": "Break",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "16:30–17:30",
+          "title": "Committee sessions",
           "venue": "Doha College · Al Wajba Campus"
         }
       ]
@@ -569,13 +614,48 @@ window.DCMUN = {
       "date": "7 November",
       "events": [
         {
-          "time": "08:45–12:00",
-          "title": "Morning programme",
+          "time": "08:45–09:00",
+          "title": "Registration",
           "venue": "Doha College · Al Wajba Campus"
         },
         {
-          "time": "15:30–18:00",
-          "title": "Afternoon programme",
+          "time": "09:00–10:30",
+          "title": "Committee session",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "10:30–11:00",
+          "title": "Break",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "11:00–12:00",
+          "title": "Committee session",
+          "venue": "Doha College · Al Wajba Campus"
+        },
+        {
+          "time": "12:00–15:30",
+          "title": "Transport period",
+          "venue": "Doha College → The Mondrian Hotel"
+        },
+        {
+          "time": "15:30–16:00",
+          "title": "Arrival time interval",
+          "venue": "The Mondrian Hotel"
+        },
+        {
+          "time": "16:00–16:15",
+          "title": "Guest Speaker",
+          "venue": "The Mondrian Hotel"
+        },
+        {
+          "time": "16:15–17:00",
+          "title": "Closing Ceremony",
+          "venue": "The Mondrian Hotel"
+        },
+        {
+          "time": "17:00–18:00",
+          "title": "Dinner",
           "venue": "The Mondrian Hotel"
         }
       ]
