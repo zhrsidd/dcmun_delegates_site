@@ -1,14 +1,14 @@
 'use strict';
 const data=window.DCMUN;
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
-const safeUrl=value=>{if(!value)return null;try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}};
+const safeUrl=value=>{if(!value)return null;try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)||u.origin===location.origin?u.href:null;}catch{return null;}};
 const link=(text,url,cls)=>{const a=el('a',cls,text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
 document.querySelector('#welcome').textContent=data.welcome;
 document.querySelector('#theme').textContent=data.theme||'To be announced.';
 const themeMessage=data.themeMessage||{};
 document.querySelector('#theme-message-copy').textContent=themeMessage.message?.trim()||'A message about our conference theme will be shared here soon.';
 const themeAuthor=document.querySelector('#theme-message-author');
-if(themeMessage.name?.trim()){themeAuthor.textContent=`${themeMessage.name.trim()} · Secretary-General`;themeAuthor.hidden=false;}
+if(themeMessage.name?.trim()){themeAuthor.textContent=`${themeMessage.name.trim()} · President of the General Assembly`;themeAuthor.hidden=false;}
 const list=document.querySelector('#committee-list');
 for(const c of data.committees){
  const resources=c.guides||c.issues;
@@ -58,8 +58,14 @@ executives.forEach((person,i)=>{
  const card=el('article','executive-card');
  card.setAttribute('role','group');card.setAttribute('aria-roledescription','slide');
  card.setAttribute('aria-label',`${i+1} of ${executives.length}: ${person.name}`);
- card.append(el('p','executive-role',person.role||'Executive team'),el('h3','',person.name));
- if(person.message)card.append(el('p','executive-message',`“${person.message}”`));
+ const photo=el('div','executive-photo');
+ const photoUrl=safeUrl(person.photo);
+ if(photoUrl){const image=el('img');image.src=photoUrl;image.alt=`Headshot of ${person.name}`;image.loading='lazy';photo.append(image);}
+ else{photo.setAttribute('aria-label',`Headshot placeholder for ${person.name}`);photo.append(el('span','', 'Add headshot'));}
+ const copy=el('div','executive-copy');
+ copy.append(el('p','executive-role',person.role||'Executive team'),el('h3','',person.name));
+ if(person.message)copy.append(el('p','executive-message',`“${person.message}”`));
+ card.append(copy,photo);
  executiveTrack.append(card);
 });
 if(executives.length){

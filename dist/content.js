@@ -2,14 +2,14 @@
 // Committees: headChair: "Full name", deputyChairs: ["Full name", "Full name"].
 // Add as many deputy names as needed; use [] when there are none.
 // Theme message: add the Secretary-General name and message in themeMessage.
-// Executives: copy an entry and fill in name, role and a short message.
+// Executives: fill in name, role, message, and photo path (e.g. assets/execHeadshots/exec photos - name.png).
 // Blank executive entries are hidden; cards appear in the order listed.
 window.DCMUN = {
   "edition": "XVIII",
-  "theme": "",
+  "theme": "Unrest",
   "themeMessage": {
-    "name": "",
-    "message": ""
+    "name": "Yushi Zhang",
+    "message": "🤝 The world feels out of our control, even more than usual. Many things that are failing our general population, especially vulnerable minorities. Right now, to be realistic is often associated with being pessimistic, or addressing dissatisfaction. How can we use the unrest caused by this to result in positive progress? 🤝"
   },
   "welcome": "Doha College Model United Nations (DCMUN) is hosted at Doha College’s Al Wajba campus. DCMUN XVIII takes place from 5 to 7 November 2026. The Saturday afternoon programme takes place at the Mondrian Hotel.",
   "map": {
@@ -31,11 +31,6 @@ window.DCMUN = {
         },
         {
           "title": "Regulating the Proliferation and Use of Anti-Personnel Landmines and Improvised Explosive Devices (IEDs)",
-          "chair": "",
-          "pdf": ""
-        },
-        {
-          "title": "Preventing the Militarization of Quantum Computing and Cryptography",
           "chair": "",
           "pdf": ""
         }
@@ -443,102 +438,122 @@ window.DCMUN = {
     {
       "name": "Adhithi Karthikeyan",
       "role": "Secretary-General",
-      "message": "Hi, I'm Adhithi, and I'm honoured to serve as SG for DCMUN XVIII! I can't wait to make this conference one of the best yet and welcome everyone to the amazing experience of DCMUN."
+      "message": "Hi, I'm Adhithi, and I'm honoured to serve as SG for DCMUN XVIII! I can't wait to make this conference one of the best yet and welcome everyone to the amazing experience of DCMUN.",
+      "photo": "assets/execHeadshots/exec photos - Adhithi.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Mary Kurian",
       "role": "Secretary-General",
-      "message": "Hello everyone! My name is Mary Kurian, and I'm incredibly excited to be serving as your Secretary-General for this year's MUN. I truly believe that change begins with a voice, and together, we can turn those voices into action. I look forward to working with all of you and making this MUN an unforgettable experience."
+      "message": "Hello everyone! My name is Mary Kurian, and I'm incredibly excited to be serving as your Secretary-General for this year's MUN. I truly believe that change begins with a voice, and together, we can turn those voices into action. I look forward to working with all of you and making this MUN an unforgettable experience.",
+      "photo": "assets/execHeadshots/exec photos - Mary.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Jianne Lee",
       "role": "Deputy Secretary-General",
-      "message": "Hi everyone! I’m Jianne Lee, one of your Deputy Secretaries-General for this year’s conference. I’m incredibly excited to join this year’s MUN team and look forward to fostering engaging debate and creating an unforgettable MUN experience for all of you!"
+      "message": "Hi everyone! I’m Jianne Lee, one of your Deputy Secretaries-General for this year’s conference. I’m incredibly excited to join this year’s MUN team and look forward to fostering engaging debate and creating an unforgettable MUN experience for all of you!",
+      "photo": "assets/execHeadshots/exec photos - Jianne.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Anushka Gudavalli",
       "role": "Deputy Secretary-General",
-      "message": "Hi, I'm Anushka, and I'll be your DSG this year. I'm excited to work with the exec team to make this year's DCMUN the best yet!"
+      "message": "Hi, I'm Anushka, and I'll be your DSG this year. I'm excited to work with the exec team to make this year's DCMUN the best yet!",
+      "photo": "assets/execHeadshots/exec photos - Anushka.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Yushi Zhang",
       "role": "President of the General Assembly",
-      "message": "Hello, I’m Yushi Zhang. I can’t wait to see everyone at the conference and present our resolution issues to all delegates. I’ll also ensure that every committee session runs smoothly. I look forward to reviewing your applications!"
+      "message": "Hello, I’m Yushi Zhang. I can’t wait to see everyone at the conference and present our resolution issues to all delegates. I’ll also ensure that every committee session runs smoothly. I look forward to reviewing your applications!",
+      "photo": "assets/execHeadshots/exec photos - Yushi.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Akshara Papineni",
       "role": "Deputy President of the General Assembly",
-      "message": "Hi! I’m Akshara, and my job lies in making the committees in this conference as educational and fun as possible! Hope to see you at the conference soon!"
+      "message": "Hi! I’m Akshara, and my job lies in making the committees in this conference as educational and fun as possible! Hope to see you at the conference soon!",
+      "photo": "assets/execHeadshots/exec photos - Akshara.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Amna Waqar",
       "role": "Deputy President of the General Assembly",
-      "message": "I am honoured to serve as your Deputy President of the General Assembly this year. I look forward to making DCMUN XVIII one of the best conferences yet!"
+      "message": "I am honoured to serve as your Deputy President of the General Assembly this year. I look forward to making DCMUN XVIII one of the best conferences yet!",
+      "photo": "assets/execHeadshots/exec photos - Amna.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Shirin Dhankhar",
       "role": "Head of Press",
-      "message": "Hello! My name is Shirin, and I’ll be your Head of Press for this year’s conference! I am so excited to be working with everyone, creating new content, and making it a wonderful conference. See you there!"
+      "message": "Hello! My name is Shirin, and I’ll be your Head of Press for this year’s conference! I am so excited to be working with everyone, creating new content, and making it a wonderful conference. See you there!",
+      "photo": "assets/execHeadshots/exec photos - Shirin.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Aryana Udayar",
       "role": "Deputy Head of Press",
-      "message": "Hello! I’m Aryana, one of your Deputy Heads of Press for this year’s conference! I am so excited to make this year’s conference the most memorable one yet!"
+      "message": "Hello! I’m Aryana, one of your Deputy Heads of Press for this year’s conference! I am so excited to make this year’s conference the most memorable one yet!",
+      "photo": "assets/execHeadshots/exec photos - Aryana.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Lara Skindhoj",
       "role": "Deputy Head of Press",
-      "message": "Hi everyone! My name is Lara Skindhøj, and I will be your Deputy Head of Press for DCMUN 2026. I’m so excited to see everyone talk about the important topics issued by DCMUN and to hear everyone’s input. Hope to see you there!"
+      "message": "Hi everyone! My name is Lara Skindhøj, and I will be your Deputy Head of Press for DCMUN 2026. I’m so excited to see everyone talk about the important topics issued by DCMUN and to hear everyone’s input. Hope to see you there!",
+      "photo": "assets/execHeadshots/exec photos - Lara.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Anvita Chaitanya",
       "role": "President of the International Court of Justice",
-      "message": "Hi, my name's Anvita, and as President of the ICJ, I'm really excited to support and challenge this year's advocates while helping create an engaging and memorable experience for everyone involved. I'm looking forward to making this our best ICJ conference yet!"
+      "message": "Hi, my name's Anvita, and as President of the ICJ, I'm really excited to support and challenge this year's advocates while helping create an engaging and memorable experience for everyone involved. I'm looking forward to making this our best ICJ conference yet!",
+      "photo": "assets/execHeadshots/exec photos - Anvita.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Vedika Kumar",
       "role": "Deputy President of the International Court of Justice",
-      "message": "I'm thrilled to be your Vice President of the ICJ this year! The rest of the ICJ team and I hope to make this year's DCMUN conference unforgettable for you guys!"
+      "message": "I'm thrilled to be your Vice President of the ICJ this year! The rest of the ICJ team and I hope to make this year's DCMUN conference unforgettable for you guys!",
+      "photo": "assets/execHeadshots/exec photos - Vedika.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Fatima Imran",
       "role": "Deputy President of the International Court of Justice",
-      "message": "Hi, my name is Fatima, and I'm this year's Deputy Head of ICJ! I'm looking forward to working with our advocates on some interesting cases. See you at the conference!"
+      "message": "Hi, my name is Fatima, and I'm this year's Deputy Head of ICJ! I'm looking forward to working with our advocates on some interesting cases. See you at the conference!",
+      "photo": "assets/execHeadshots/exec photos - Fatima.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "John Paul Ribeiru",
       "role": "Head of Training - Head of IT",
-      "message": "Hey, it's JP! As the Head of Training, I work with the team to try to create sessions that are as enjoyable as possible, so we hope you have fun in the club and at our conference!"
+      "message": "Hey, it's JP! As the Head of Training, I work with the team to try to create sessions that are as enjoyable as possible, so we hope you have fun in the club and at our conference!",
+      "photo": "assets/execHeadshots/exec photos - John Paul.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Zuhayr Siddique",
       "role": "Deputy Head of Training - Head of IT",
-      "message": "My name is Zuhayr, and as Deputy Head of Training, I wish to make sure all of our delegates feel prepared and confident for MUN conferences."
+      "message": "My name is Zuhayr, and as Deputy Head of Training, I wish to make sure all of our delegates feel prepared and confident for MUN conferences.",
+      "photo": "assets/execHeadshots/exec photos - Zuhayr.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Maria Ali",
       "role": "Deputy Head of Training",
-      "message": "As Deputy Head of Training, I hope to make training sessions fun and welcoming while helping delegates, whether they are completely new to MUN or already have experience. I'm excited to work with the members this year, support everyone, and help make DCMUN an enjoyable and memorable experience!"
+      "message": "As Deputy Head of Training, I hope to make training sessions fun and welcoming while helping delegates, whether they are completely new to MUN or already have experience. I'm excited to work with the members this year, support everyone, and help make DCMUN an enjoyable and memorable experience!",
+      "photo": "assets/execHeadshots/exec photos - Maria.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Arianna Martella",
       "role": "Head of Admin",
-      "message": "As your Head of Admin, I aspire to make this year’s conference run as smoothly as possible and dedicate myself to supporting and organising this conference!"
+      "message": "As your Head of Admin, I aspire to make this year’s conference run as smoothly as possible and dedicate myself to supporting and organising this conference!",
+      "photo": "assets/execHeadshots/exec photos - Arianna.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Emaan Yaqoob",
       "role": "Deputy Head of Admin",
-      "message": "Hi, I’m Emaan, and I’m your Deputy Head of Admin this year. I look forward to making this year’s conference a memorable experience for everyone. If you see me around, don’t be afraid to say hi!"
+      "message": "Hi, I’m Emaan, and I’m your Deputy Head of Admin this year. I look forward to making this year’s conference a memorable experience for everyone. If you see me around, don’t be afraid to say hi!",
+      "photo": "assets/execHeadshots/exec photos - Emaan.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Shiza Sharif",
       "role": "Deputy Head of Admin",
-      "message": "Hi, I am so excited to be a part of DCMUN as your Deputy Head of Admin. I can’t wait to work with all of you. Let’s make this conference a memorable one."
+      "message": "Hi, I am so excited to be a part of DCMUN as your Deputy Head of Admin. I can’t wait to work with all of you. Let’s make this conference a memorable one.",
+      "photo": "assets/execHeadshots/exec photos - Shiza.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Sienna Al-Kassem",
       "role": "Head of DC-IMPACT",
-      "message": "I'm Sienna Elsa, and I am the Head of DC-IMPACT. I am so happy I've managed to come through and become an executive this year! I've always been invested in making a difference in the world, and MUN is something I'm so very passionate about. I hope we can all bring happy and positive energy to the community and enjoy DCMUN."
+      "message": "I'm Sienna Elsa, and I am the Head of DC-IMPACT. I am so happy I've managed to come through and become an executive this year! I've always been invested in making a difference in the world, and MUN is something I'm so very passionate about. I hope we can all bring happy and positive energy to the community and enjoy DCMUN.",
+      "photo": "assets/execHeadshots/exec photos - Sienna.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     }
   ],
   "schedule": [

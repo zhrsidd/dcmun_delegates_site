@@ -62,6 +62,8 @@ Near the end of `dist/content.js`, fill in the blank entry in `executives`. Copy
 
 Entries appear in the order listed. Entries without a name stay hidden. Until names are added, the section shows a short coming-soon message. Visitors can swipe or scroll through the cards, use the arrow buttons, or focus the cards and press the left/right arrow keys. Cards automatically advance every five seconds and loop to the beginning. Rotation pauses while hovered, focused, or in a hidden tab; swiping pauses it until Play is selected. A Play/Pause button controls rotation. Reduced-motion preferences disable automatic rotation initially. Messages appear in italics and quotation marks.
 
+Each executive card includes a headshot placeholder. To show a photo, add a `photo` path to that person's entry, for example `"photo": "assets/executives/adhithi.jpg"`, and place the image at that path inside `dist`. Use JPG, PNG or WebP files; the card crops the image to fit.
+
 ### Map and schedule
 
 Set `map.image` to the official map image path and `map.pdf` to a PDF path. Empty fields show an explicitly labeled placeholder, not a fictional school map. Set `theme` when confirmed. The About paragraph summarizes confirmed conference dates and venues.

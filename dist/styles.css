@@ -14,3 +14,10 @@
 .theme-message{max-width:72ch;margin-top:24px;padding:24px;border:1px solid var(--line);border-left:3px solid var(--action);border-radius:6px;background:var(--surface)}.theme-message h3{margin:0 0 12px;font-size:15px;font-weight:700}.theme-message p{margin:0;color:#46546b;white-space:pre-line;overflow-wrap:anywhere}#theme-message-author{margin-top:16px;color:var(--action);font-size:13px;font-weight:600}@media(max-width:800px){.theme-message{padding:20px}}
 
 #executive-rotation{width:auto;border-radius:6px;padding:0 12px;font-size:13px}.executive-message{font-style:italic}
+
+/* Executive headshot area; add a photo path to an executive in content.js to replace the placeholder. */
+.executive-card{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:28px;align-items:start}
+.executive-photo{width:160px;height:190px;display:grid;place-items:center;overflow:hidden;border:1px dashed #8ba9d0;border-radius:6px;background:#eaf1fc;color:var(--muted);font-size:12px}
+.executive-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.executive-copy{min-width:0}
+@media(max-width:800px){.executive-card{grid-template-columns:minmax(0,1fr) 112px;gap:20px}.executive-photo{width:112px;height:140px}}
