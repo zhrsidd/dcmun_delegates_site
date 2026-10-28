@@ -9,7 +9,7 @@ window.DCMUN = {
   "theme": "Unrest",
   "themeMessage": {
     "name": "Yushi Zhang",
-    "message": "🤝 The world feels out of our control, even more than usual. Many things that are failing our general population, especially vulnerable minorities. Right now, to be realistic is often associated with being pessimistic, or addressing dissatisfaction. How can we use the unrest caused by this to result in positive progress? 🤝"
+    "message": "“The world feels out of our control, even more than usual. Many things that are failing our general population, especially vulnerable minorities. Right now, to be realistic is often associated with being pessimistic, or addressing dissatisfaction. How can we use the unrest caused by this to result in positive progress?”"
   },
   "welcome": "Doha College Model United Nations (DCMUN) is hosted at Doha College’s Al Wajba campus. DCMUN XVIII takes place from 5 to 7 November 2026. The Saturday afternoon programme takes place at the Mondrian Hotel.",
   "map": {
@@ -523,7 +523,7 @@ window.DCMUN = {
       "name": "Zuhayr Siddique",
       "role": "Deputy Head of Training - Head of IT",
       "message": "My name is Zuhayr, and as Deputy Head of Training, I wish to make sure all of our delegates feel prepared and confident for MUN conferences.",
-      "photo": "assets/execHeadshots/exec photos - Zuhayr.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
+      "photo": "assets/execHeadshots/zuhayr.jpg", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
       "name": "Maria Ali",

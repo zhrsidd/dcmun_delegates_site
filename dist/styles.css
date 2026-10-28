@@ -19,6 +19,7 @@
 .executive-card{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:28px;align-items:start}
 .executive-photo{width:160px;height:190px;display:grid;place-items:center;overflow:hidden;border:1px dashed #8ba9d0;border-radius:6px;background:#eaf1fc;color:var(--muted);font-size:12px}
 .executive-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.executive-photo img[src$="/zuhayr.jpg"]{object-position:center top}
 .executive-copy{min-width:0}
 @media(max-width:800px){.executive-card{grid-template-columns:minmax(0,1fr) 112px;gap:20px}.executive-photo{width:112px;height:140px}}
 /* Quiet footer link to the conference's only social account. */
