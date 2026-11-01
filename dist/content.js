@@ -21,7 +21,7 @@ window.DCMUN = {
       "code": "GA1",
       "name": "Disarmament and Weapons",
       "headChair": "Abhijith Ajesh Kumar",
-      "deputyChairs": ["Joudi Hamed"],
+      "deputyChairs": ["Joudi Hamed","Nayef Khan"],
       "room": "",
       "issues": [
         {
@@ -193,7 +193,7 @@ window.DCMUN = {
       "code": "SC",
       "name": "Security Council",
       "headChair": "Maria Ali",
-      "deputyChairs": ["Syeda Habiba","Nayef Khan"],
+      "deputyChairs": ["Syeda Habiba"],
       "room": "",
       "issues": [
         {
