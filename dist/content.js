@@ -1,5 +1,4 @@
 
-cat > content.js <<'EOF'
 // Edit conference content here. Empty PDF fields show “Not yet available”.
 // Committees: headChair: "Full name", deputyChairs: ["Full name", "Full name"].
 // Add as many deputy names as needed; use [] when there are none.
