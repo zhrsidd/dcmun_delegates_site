@@ -28,13 +28,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Addressing the Risks of a Double Dual-Use Dilemma Regarding Private Aerospace Firms",
-          "chair": "",
-          "pdf": ""
+          "chair": "Joudi Hamed",
+          "pdf": "https://docs.google.com/document/d/1Lh8Cv60BhcHUsjx8B2hEIZ-lYOkWn6mpJk_5eo6Q53w/edit?usp=drivesdk"
         },
         {
           "title": "Regulating the Proliferation and Use of Anti-Personnel Landmines and Improvised Explosive Devices (IEDs)",
-          "chair": "",
-          "pdf": ""
+          "chair": "Abhijith Ajesh Kumar",
+          "pdf": "https://docs.google.com/document/d/1ZtkktUe_sporaK7T0faTITpoYE-4YzVhMDHHKOh3U5o/edit?usp=drivesdk"
         }
       ]
     },
@@ -47,18 +47,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Addressing Global Supply Chain Fragmentation and its Impact on Developing Countries",
-          "chair": "",
-          "pdf": ""
+          "chair": "Lindelwa Busiswa Mngomezulu",
+          "pdf": "https://docs.google.com/document/d/12GxTgNu9phAVE5HN6z5Ti7PvhpLJNU32rmpr5yJ6shA/edit?usp=drivesdk"
         },
         {
           "title": "Addressing the Role of Illicit Commodity Trading in Financing Non-State Actors",
-          "chair": "",
-          "pdf": ""
+          "chair": "Mohammad Maaz",
+          "pdf": "https://docs.google.com/document/d/1UlMBT7tDm0CofzHGekPXahCC_4Qmt5O9Mc6r-quVIPU/edit?usp=drivesdk"
         },
         {
           "title": "Regulating Cryptocurrency Markets and Their Impact on Financial Stability",
-          "chair": "",
-          "pdf": ""
+          "chair": "Ahmad Kosai Elwadiya",
+          "pdf": "https://docs.google.com/document/d/1Yyqis6A5Rt8_pSK7tPHLEYJg_QBjBOqDQBy7hEohv68/edit?usp=drivesdk"
         }
       ]
     },
@@ -71,13 +71,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Measures to Provide Humanitarian Assistance to Reduce the Effect of Cyclone Gezani on Madagascar",
-          "chair": "",
-          "pdf": ""
+          "chair": "Farida Taher",
+          "pdf": "https://docs.google.com/document/d/1MB6D3G0j9dfF94hXKJMb6hOxSSKwOJuRUZiQgVfMYLU/edit?usp=drivesdk"
         },
         {
           "title": "Addressing Systematic Barriers to Equal Employment Opportunities for University Graduates",
-          "chair": "",
-          "pdf": ""
+          "chair": "Malak Yagoub",
+          "pdf": "https://docs.google.com/document/d/1snUz1blZVQgFpqvAZmQC_BJpNpPoUmpOnYYy3-Ue5Ls/edit?usp=drivesdk"
         }
       ]
     },
@@ -90,13 +90,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Preventing the Exploitation of Resources and Militarisation of Non-Self-Governing Territories",
-          "chair": "",
-          "pdf": ""
+          "chair": "Maryam Ahmed & Yusef Elaffandi",
+          "pdf": "https://docs.google.com/document/d/1oZf-3o0L4fElsjkJvQ_3KnBHPHA_gpd2TzPOtx2IJdM/edit?usp=drivesdk"
         },
         {
           "title": "Assessing the Progress Towards a Referendum on the Self-Determination of the Sahrawi People",
-          "chair": "",
-          "pdf": ""
+          "chair": "Helen Mangue",
+          "pdf": "https://docs.google.com/document/d/1yUFMlFfUbNyCmg_Tpz9KpqAS2zbQMZ93QRKYqyWqjSk/edit?usp=drivesdk"
         }
       ]
     },
@@ -109,13 +109,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Preventing Concurrent UN Emergencies from Overwhelming Administrative Capacity",
-          "chair": "",
-          "pdf": ""
+          "chair": "Izyan Mohammed & Rishi Sharma",
+          "pdf": "https://docs.google.com/document/d/1074WSS739vB1CsGFmQqplsG45Mayk9YGIGURQjkkRR4/edit?usp=drivesdk"
         },
         {
           "title": "Assessing the Involvement of Private Sector Partnerships with the UN",
-          "chair": "",
-          "pdf": ""
+          "chair": "Lehara Ranasinghe & Rishi Sharma",
+          "pdf": "https://docs.google.com/document/d/1oXh6TKirxL6ddT9sQPF8wTjFFWSJ6Xj--2iB17uS7z4/edit?usp=drivesdk"
         }
       ]
     },
@@ -128,18 +128,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Regulating the Repatriation of Colonial-Era Cultural Heritage",
-          "chair": "",
-          "pdf": ""
+          "chair": "Zaha Gusbi",
+          "pdf": "https://docs.google.com/document/d/1QJAALWuNxcWM-Ljw7NLi2t7aLoQjPZHNd-oD2tdXieg/edit?usp=drivesdk"
         },
         {
           "title": "Addressing Legal Disputes Over Undersea Infrastructure Crossing National Jurisdictions",
-          "chair": "",
-          "pdf": ""
+          "chair": "Arni Mahendra",
+          "pdf": "https://docs.google.com/document/d/1nv3XDggXwaAwwlE5PBP-RFfxxhKEENwzdC8N47v6QGc/edit?usp=drivesdk"
         },
         {
           "title": "Regulating State Responsibility for Damage to Critical Digital Infrastructure",
-          "chair": "",
-          "pdf": ""
+          "chair": "Yousra Amgad Abdelraheem",
+          "pdf": "https://docs.google.com/document/d/1hf81r5eqXRfxPv6BNu4Bol8li5KwmQ-BzphBZ-clHbc/edit?usp=drivesdk"
         }
       ]
     },
@@ -152,18 +152,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Mitigating Corporate Monopolies on Proprietary Seed and Smart-Farming Tech",
-          "chair": "",
-          "pdf": ""
+          "chair": "Haneefa Hussain",
+          "pdf": "https://docs.google.com/document/d/1UAtDXAa_vpV5hjkjIzKSEWnCUUtJc80q2njTwT_311w/edit?usp=drivesdk"
         },
         {
           "title": "Regulating the Influx of International NGOs to Prevent the Creation of Shadow States",
-          "chair": "",
-          "pdf": ""
+          "chair": "Aisha Al Thani",
+          "pdf": "https://docs.google.com/document/d/1WOZLtPF1F-1wpddmP74G9cNJbruJX552cQZ52FoFFlY/edit?usp=drivesdk"
         },
         {
           "title": "Measures to Advance Sustainable Forest-Based Bioeconomy Approaches",
-          "chair": "",
-          "pdf": ""
+          "chair": "Myesha Shaikh",
+          "pdf": "https://docs.google.com/document/d/1iCX0WIs0y9r7-FZGuV1-YvzAQGXFGovul5E5NPVmfKI/edit?usp=drivesdk"
         }
       ]
     },
@@ -176,18 +176,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "De-criminalizing Homelessness and Ensuring Human Rights Protection.",
-          "chair": "",
-          "pdf": ""
+          "chair": "Ahmad Alizada",
+          "pdf": "https://docs.google.com/document/d/1qFAL7zkB0MkIZdedpwSHQMhDYk2M806cBE_4jFe5oj4/edit?usp=drivesdk"
         },
         {
           "title": "Implementing Human Rights Safeguards in the Proliferation of Mass Surveillance and Predictive Profiling Technologies",
-          "chair": "",
-          "pdf": ""
+          "chair": "Omar Abdulhameed",
+          "pdf": "https://docs.google.com/document/d/162nHg494mW8dte5usxs98BtNUnRsXZlzMWWzjGzhB3k/edit?usp=drivesdk"
         },
         {
           "title": "Measures to Protect Women Migrant Domestic Workers from Forced Labour",
-          "chair": "",
-          "pdf": ""
+          "chair": "Manha Khan",
+          "pdf": "https://docs.google.com/document/d/1fpkL4R-Nwz-LIhjkEUb7BoJi9jxf80a7QtscRjJq2P4/edit?usp=drivesdk"
         }
       ]
     },
@@ -200,8 +200,8 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Measures to Assist the Restoration of the Provision of Public Services in Disaster-Afflicted Nations",
-          "chair": "",
-          "pdf": ""
+          "chair": "Syeda Alina Habiba",
+          "pdf": "https://docs.google.com/document/d/1oO-TchJbOwisEBpF4R9IypSA46-Kkhala7-Cn6zvh0k/edit?usp=drivesdk"
         },
         {
           "title": "Addressing the Rise of Ultra-Nationalism and the Impacts on Globalisation",
@@ -219,13 +219,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Addressing the Fragmentation of Yugoslavia and the Collapse of Federal Political Authority Across the Balkans (1991)",
-          "chair": "",
-          "pdf": ""
+          "chair": "Zakarya Aldeeb",
+          "pdf": "https://docs.google.com/document/d/1rP8slMC8Sk7EU42iCWqnhMBqhQH7PECSBi928CAG31Q/edit?usp=drivesdk"
         },
         {
           "title": "Measures to Respond to the Government Crackdown of the Saffron Revolution in Myanmar (2007)",
-          "chair": "",
-          "pdf": ""
+          "chair": "Marya Al-Sumaiti & Isla Melville",
+          "pdf": "https://docs.google.com/document/d/1jr87SIg7NjSJSoNmo0tXi26H-GFsaKMukCHkV60PjmQ/edit?usp=drivesdk"
         }
       ]
     },
@@ -238,18 +238,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Determining the Political Future of France Following the Collapse of Monarchical Authority During the French Revolution, 1789",
-          "chair": "",
-          "pdf": ""
+          "chair": "Afsha Gumani",
+          "pdf": "https://docs.google.com/document/d/1ZUoXoLOJWWj_SCF_TIA2tgZl2H0EWfnrwZTBFL_9aC4/edit?usp=drivesdk"
         },
         {
           "title": "Examining the Túpac Amaru II Rebellion and Indigenous Resistance to Spanish Colonial Rule in the Andes, 1780–1781",
-          "chair": "",
-          "pdf": ""
+          "chair": "Ayube Ghadamsi",
+          "pdf": "https://docs.google.com/document/d/12SsLAc6EWDrQ-ASPdYI1L5qILiCk8NpSE52QEfyIXkE/edit?usp=drivesdk"
         },
         {
           "title": "Assessing the Political and Social Consequences of the Black Death and the Breakdown of Traditional Social Structures in Europe, 1347–1351",
-          "chair": "",
-          "pdf": ""
+          "chair": "Zaeem Kodumayil",
+          "pdf": "https://docs.google.com/document/d/1DCILtfgASiFzw_J4kVPwOOAvg-K4n2arS4YoANyQuY0/edit?usp=drivesdk"
         }
       ]
     },
@@ -262,18 +262,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Regulating Air Pollution Frontiers in Cross-Border Industrial Basins",
-          "chair": "",
-          "pdf": ""
+          "chair": "Niranjana Rajeev",
+          "pdf": "https://docs.google.com/document/d/14sdB-fScCJQZfrQDhh43IKHyITjskSh_WjWz3lR4B9k/edit?usp=drivesdk"
         },
         {
           "title": "Deploying Standardized Heat-Health Protection and Urban Surveillance Systems",
-          "chair": "",
-          "pdf": ""
+          "chair": "Mohammed Batley",
+          "pdf": "https://docs.google.com/document/d/1-fnDjRn7c6atW1cTD_-C3anueRk7HyLHVzyvmmiAZJ0/edit?usp=drivesdk"
         },
         {
           "title": "Measures to Elevate the Position of Women in the Health and Care Workforce",
-          "chair": "",
-          "pdf": ""
+          "chair": "Niharika Bisht",
+          "pdf": "https://docs.google.com/document/d/17OYn3E-J7uomf4Dz8gJOpCSYRLci69N_YUh858SklvU/edit?usp=drivesdk"
         }
       ]
     },
@@ -286,18 +286,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Measures to Promote Technical and Vocational Education and Training For Adolescents in Crisis-Affected Regions",
-          "chair": "",
-          "pdf": ""
+          "chair": "Toleen Afaneh",
+          "pdf": "https://docs.google.com/document/d/1UQ3qTm1-LotCeAIbm2yRJTfwrT2-jW4ioOIB2xqmB2Y/edit?usp=drivesdk"
         },
         {
           "title": "Measures to Protect Stateless Children from Systematic Discrimination and Disadvantages",
-          "chair": "",
-          "pdf": ""
+          "chair": "Sienna Elsa Al-Kassem",
+          "pdf": "https://docs.google.com/document/d/1L1AIX7uQeQVEw3owkw-s-8tQbewzOeamxyPzkcWl6zQ/edit?usp=drivesdk"
         },
         {
           "title": "Addressing the Commercialisation of Childhood Through Social Media Platforms",
-          "chair": "",
-          "pdf": ""
+          "chair": "Aarisha Sharma",
+          "pdf": "https://docs.google.com/document/d/1-x11o6PezBeGhuA786Xr-jZU0VvngBCvmfDu6faFCfM/edit?usp=drivesdk"
         }
       ]
     },
@@ -310,13 +310,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Preventing the Disruption of Food Supply Chains of Land-Locked Nations During Fuel Shocks",
-          "chair": "",
-          "pdf": ""
+          "chair": "Zarina Geada, Megha Mattamana & Simra Hasan Rashid",
+          "pdf": "https://docs.google.com/document/d/1JZsW3Tf-KAGT_s07IXF2fy3C_DCu5WbT5mTo1yTh3RM/edit?usp=drivesdk"
         },
         {
           "title": "Reforming Antibiotic Use in Global Agrifood Systems to Combat Superbugs",
-          "chair": "",
-          "pdf": ""
+          "chair": "Megha Mattamana, Zarina Geada & Simra Hasan Rashid",
+          "pdf": "https://docs.google.com/document/d/1Fll0TaJchNmAtq4txF9-JzYbPcxoxFMO6J7sDwItaxY/edit?usp=drivesdk"
         }
       ]
     },
@@ -329,18 +329,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Combating Youth Unemployment in Communities Affected by Climate Shocks",
-          "chair": "",
-          "pdf": ""
+          "chair": "Adam Khalil",
+          "pdf": "https://docs.google.com/document/d/1YrxnLn3mNkbYF234TVYjcvWQ0dD9sk4iNbR6XAppvd8/edit?usp=drivesdk"
         },
         {
           "title": "Addressing Housing Affordability in Urbanising Central Asian Cities",
-          "chair": "",
-          "pdf": ""
+          "chair": "Samrah Fatima",
+          "pdf": "https://docs.google.com/document/d/1gpmqV1WigNB4AA6asRbc4dLqiJKG80B2cPpDKpg99yc/edit?usp=drivesdk"
         },
         {
           "title": "Ensuring Local Economic Gains from Mineral Extraction in Developing Nations",
-          "chair": "",
-          "pdf": ""
+          "chair": "Adrian Chaaban",
+          "pdf": "https://docs.google.com/document/d/1lW2TduULjQYvw6OpwYf_9x79fOuBCoL-lb_qHrTo490/edit?usp=drivesdk"
         }
       ]
     },
@@ -353,18 +353,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Addressing the Risks to National Infrastructure Caused by Electromagnetic Warfare",
-          "chair": "",
-          "pdf": ""
+          "chair": "Ahmed Abaza",
+          "pdf": "https://docs.google.com/document/d/1WBMoymPNuMHdIGPUOGoDvxX8GIFufBiBGNSPkekVYzQ/edit?usp=drivesdk"
         },
         {
           "title": "Combating the Proliferation of Illicit Weapons in West Africa",
-          "chair": "",
-          "pdf": ""
+          "chair": "Faris Zafar",
+          "pdf": "https://docs.google.com/document/d/1GIqbf2PQUuE1hwRJOmT9MDefIRECpJZlitKHJatVsns/edit?usp=drivesdk"
         },
         {
           "title": "Assessing the Social Acceptance and Reintegration of Former Associates of Extremist Organisations",
-          "chair": "",
-          "pdf": ""
+          "chair": "Mohammed Zafar Khan",
+          "pdf": "https://docs.google.com/document/d/1aM_moPUnl5n42SCgM5G9wSrq3wpebJGZ5ErjrMTCLCo/edit?usp=drivesdk"
         }
       ]
     },
@@ -377,18 +377,18 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Reassessing Environmental Ambition for Energy Sources Used in Industrialisation for Developing Nations",
-          "chair": "",
-          "pdf": ""
+          "chair": "Aina Irfan",
+          "pdf": "https://docs.google.com/document/d/15EiahF3p3zPc22YRHfBeY0oAQfsBSgjFNAxx1pAw0Xs/edit?usp=drivesdk"
         },
         {
           "title": "Balancing the Economic Benefits of Airport Expansion in Urban Areas",
-          "chair": "",
-          "pdf": ""
+          "chair": "Chaeyoung Yun",
+          "pdf": "https://docs.google.com/document/d/1OVt1UEcMhokHPk1mbzJh0cPEup4NofTt1SvX073cPWg/edit?usp=drivesdk"
         },
         {
           "title": "Supporting Global Access to Affordable Mobile Connectivity in Developing Countries",
-          "chair": "",
-          "pdf": ""
+          "chair": "Meera Nambiar",
+          "pdf": "https://docs.google.com/document/d/1Ng-wyyuNLJvKLZtR15ieryOdGydndcbcAjmwnES1PeQ/edit?usp=drivesdk"
         }
       ]
     },
@@ -401,13 +401,13 @@ window.DCMUN = {
       "issues": [
         {
           "title": "Addressing Government Formalisation of Sanitation Workers in Informal Settlements",
-          "chair": "",
-          "pdf": ""
+          "chair": "Ayaan Shakeel & Zara Zaheer",
+          "pdf": "https://docs.google.com/document/d/1TYMO4DVWj855STS5MpMqj92G_3CEJX8EE8FGxZVNeX8/edit?usp=drivesdk"
         },
         {
           "title": "Addressing Water Scarcity and Drought Management In South Africa",
-          "chair": "",
-          "pdf": ""
+          "chair": "Leila Abbas",
+          "pdf": "https://docs.google.com/document/d/1ovaAvjZcVHqk1YL-uxEX4SV2jckWlXhHE0N3kC5MAK8/edit?usp=drivesdk"
         }
       ]
     },
@@ -420,18 +420,20 @@ window.DCMUN = {
       "guides": [
         {
           "title": "Background Guide",
-          "pdf": ""
+          "pdf": "https://docs.google.com/document/d/1N3hITUH62-zOyBYZU4PHCbYphfyMUmSTCUrdwGPBIsU/edit?usp=drivesdk",
+          "chair": "Adil Sahibzada, Arham Shaikh & Ayma Hadi"
         },
         {
           "title": "Direction Guide",
-          "pdf": ""
+          "pdf": "https://docs.google.com/document/d/1SJxMEe_pq1Wd8J45VIJQ7s1I54CZqAB_yMkaJiQ6HyE/edit?usp=drivesdk",
+          "chair": "Adil Sahibzada, Arham Shaikh & Ayma Hadi"
         }
       ],
       "issues": [
         {
           "title": "Addressing the Emergence of a High-Infection Rate Pandemic Originating in Australia",
-          "chair": "",
-          "pdf": ""
+          "chair": "Adil Sahibzada, Arham Shaikh & Ayma Hadi",
+          "pdf": "https://docs.google.com/document/d/1N3hITUH62-zOyBYZU4PHCbYphfyMUmSTCUrdwGPBIsU/edit?usp=drivesdk"
         }
       ]
     }
@@ -679,6 +681,3 @@ window.DCMUN = {
     }
   ]
 };
-EOF
-
-node --check content.js
