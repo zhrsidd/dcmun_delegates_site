@@ -1,3 +1,5 @@
+
+cat > content.js <<'EOF'
 // Edit conference content here. Empty PDF fields show “Not yet available”.
 // Committees: headChair: "Full name", deputyChairs: ["Full name", "Full name"].
 // Add as many deputy names as needed; use [] when there are none.
@@ -22,7 +24,7 @@ window.DCMUN = {
       "name": "Disarmament and Weapons",
       "headChair": "Abhijith Ajesh Kumar",
       "deputyChairs": ["Joudi Hamed","Nayef Khan"],
-      "room": "",
+      "room": "S2 G16",
       "issues": [
         {
           "title": "Addressing the Risks of a Double Dual-Use Dilemma Regarding Private Aerospace Firms",
@@ -40,8 +42,8 @@ window.DCMUN = {
       "code": "GA2",
       "name": "Economic and Financial Committee",
       "headChair": "Ahmad Elwadiya",
-      "deputyChairs": ["Lindelwa Mngomezulu","Mohammed Maaz"],
-      "room": "",
+      "deputyChairs": ["Lindelwa Mngomezulu","Mohammad Maaz"],
+      "room": "S2 G18",
       "issues": [
         {
           "title": "Addressing Global Supply Chain Fragmentation and its Impact on Developing Countries",
@@ -65,7 +67,7 @@ window.DCMUN = {
       "name": "Humanitarian and Cultural",
       "headChair": "Muhammad Armaghan",
       "deputyChairs": ["Malak Yagoub","Farida Taher"],
-      "room": "",
+      "room": "S2 G19",
       "issues": [
         {
           "title": "Measures to Provide Humanitarian Assistance to Reduce the Effect of Cyclone Gezani on Madagascar",
@@ -84,7 +86,7 @@ window.DCMUN = {
       "name": "Special Political and Decolonization",
       "headChair": "Helen Mangue",
       "deputyChairs": ["Yusef Elaffandi","Maryam Ahmed"],
-      "room": "",
+      "room": "S2 G21",
       "issues": [
         {
           "title": "Preventing the Exploitation of Resources and Militarisation of Non-Self-Governing Territories",
@@ -103,7 +105,7 @@ window.DCMUN = {
       "name": "Administration and Budgetary Matters",
       "headChair": "Rishi Sharma",
       "deputyChairs": ["Izyan Mohammed","Lehara Ranasinghe"],
-      "room": "",
+      "room": "S2 G22",
       "issues": [
         {
           "title": "Preventing Concurrent UN Emergencies from Overwhelming Administrative Capacity",
@@ -121,8 +123,8 @@ window.DCMUN = {
       "code": "GA6",
       "name": "Legal",
       "headChair": "Arni Mahendra",
-      "deputyChairs": ["Yousra Abdelraheem","Zaha Gusbi"],
-      "room": "",
+      "deputyChairs": ["Yousra Amgad Abdelraheem","Zaha Gusbi"],
+      "room": "S2 G23",
       "issues": [
         {
           "title": "Regulating the Repatriation of Colonial-Era Cultural Heritage",
@@ -145,8 +147,8 @@ window.DCMUN = {
       "code": "ECOSOC",
       "name": "Economic and Social (ECOSOC)",
       "headChair": "Aisha Al Thani",
-      "deputyChairs": ["Haneefa Hussain","Myesha Sheikh"],
-      "room": "",
+      "deputyChairs": ["Haneefa Hussain","Myesha Shaikh"],
+      "room": "S4 G16",
       "issues": [
         {
           "title": "Mitigating Corporate Monopolies on Proprietary Seed and Smart-Farming Tech",
@@ -170,7 +172,7 @@ window.DCMUN = {
       "name": "Human Rights Council (HRC)",
       "headChair": "Omar Abdulhameed",
       "deputyChairs": ["Ahmad Alizada","Manha Khan"],
-      "room": "",
+      "room": "S4 G17",
       "issues": [
         {
           "title": "De-criminalizing Homelessness and Ensuring Human Rights Protection.",
@@ -194,7 +196,7 @@ window.DCMUN = {
       "name": "Security Council",
       "headChair": "Maria Ali",
       "deputyChairs": ["Syeda Habiba"],
-      "room": "",
+      "room": "S2 G11",
       "issues": [
         {
           "title": "Measures to Assist the Restoration of the Provision of Public Services in Disaster-Afflicted Nations",
@@ -213,7 +215,7 @@ window.DCMUN = {
       "name": "HSC RECENT",
       "headChair": "Zakarya Aldeeb",
       "deputyChairs": ["Isla Melville","Marya Al-Sumaiti"],
-      "room": "",
+      "room": "S2 G10",
       "issues": [
         {
           "title": "Addressing the Fragmentation of Yugoslavia and the Collapse of Federal Political Authority Across the Balkans (1991)",
@@ -232,7 +234,7 @@ window.DCMUN = {
       "name": "HSC ANCIENT",
       "headChair": "Afsha Gumani",
       "deputyChairs": ["Zaeem Kodumayil","Ayube Ghadamsi"],
-      "room": "",
+      "room": "S2 G07",
       "issues": [
         {
           "title": "Determining the Political Future of France Following the Collapse of Monarchical Authority During the French Revolution, 1789",
@@ -256,7 +258,7 @@ window.DCMUN = {
       "name": "World Health Organisation",
       "headChair": "Niharika Bisht",
       "deputyChairs": ["Niranjana Rajeev","Mohammed Batley"],
-      "room": "",
+      "room": "S2 G04",
       "issues": [
         {
           "title": "Regulating Air Pollution Frontiers in Cross-Border Industrial Basins",
@@ -279,8 +281,8 @@ window.DCMUN = {
       "code": "UNICEF",
       "name": "United Nations Children's Fund (UNICEF)",
       "headChair": "Toleen Afaneh",
-      "deputyChairs": ["Sienna Al-Kassem","Aarisha Sharma"],
-      "room": "",
+      "deputyChairs": ["Sienna Elsa Al-Kassem","Aarisha Sharma"],
+      "room": "S4 G20",
       "issues": [
         {
           "title": "Measures to Promote Technical and Vocational Education and Training For Adolescents in Crisis-Affected Regions",
@@ -304,7 +306,7 @@ window.DCMUN = {
       "name": "WFP (World Food Programme)",
       "headChair": "Simra Hasan Rashid",
       "deputyChairs": ["Zarina Geada","Megha Mattamana"],
-      "room": "",
+      "room": "S4 G18",
       "issues": [
         {
           "title": "Preventing the Disruption of Food Supply Chains of Land-Locked Nations During Fuel Shocks",
@@ -323,7 +325,7 @@ window.DCMUN = {
       "name": "UNDP (United Nations Development Program)",
       "headChair": "Samrah Fatima",
       "deputyChairs": ["Adrian Chaaban","Adam Khalil"],
-      "room": "",
+      "room": "S2 G06",
       "issues": [
         {
           "title": "Combating Youth Unemployment in Communities Affected by Climate Shocks",
@@ -347,7 +349,7 @@ window.DCMUN = {
       "name": "UNIDIR (United Nations Institute for Disarmament Research)",
       "headChair": "Mohammed Zafar Khan",
       "deputyChairs": ["Faris Zafar","Ahmed Abaza"],
-      "room": "",
+      "room": "S4 G04",
       "issues": [
         {
           "title": "Addressing the Risks to National Infrastructure Caused by Electromagnetic Warfare",
@@ -371,7 +373,7 @@ window.DCMUN = {
       "name": "SDG 9 (Industry, Innovation and Infrastructure)",
       "headChair": "Aina Irfan",
       "deputyChairs": ["Chaeyoung Yun","Meera Nambiar"],
-      "room": "",
+      "room": "S4 G06",
       "issues": [
         {
           "title": "Reassessing Environmental Ambition for Energy Sources Used in Industrialisation for Developing Nations",
@@ -395,7 +397,7 @@ window.DCMUN = {
       "name": "SDG 6 (Clean Water and Sanitation)",
       "headChair": "Leila Abbas",
       "deputyChairs": ["Ayaan Shakeel","Zara Zaheer"],
-      "room": "",
+      "room": "S4 G05",
       "issues": [
         {
           "title": "Addressing Government Formalisation of Sanitation Workers in Informal Settlements",
@@ -414,7 +416,7 @@ window.DCMUN = {
       "name": "Crisis Committee",
       "headChair": "Adil Sahibzada",
       "deputyChairs": ["Arham Shaikh","Ayma Hadi"],
-      "room": "",
+      "room": "S4 G08",
       "guides": [
         {
           "title": "Background Guide",
@@ -540,7 +542,7 @@ window.DCMUN = {
     {
       "name": "Emaan Yaqoob",
       "role": "Deputy Head of Admin",
-      "message": "Hi, I’m Emaan, and I’m your Deputy Head of Admin this year. I look forward to making this year’s conference a memorable experience for everyone. If you see me around, don’t be afraid to say hi!",
+      "message": "Hi everyone! I’m Emaan, and I’m your Deputy Head of Admin this year. I look forward to making this year’s conference a memorable experience for everyone. If you see me around, don’t be afraid to say hi!",
       "photo": "assets/execHeadshots/exec photos - Emaan.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
@@ -550,7 +552,7 @@ window.DCMUN = {
       "photo": "assets/execHeadshots/exec photos - Shiza.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
     },
     {
-      "name": "Sienna Al-Kassem",
+      "name": "Sienna Elsa Al-Kassem",
       "role": "Head of DC-IMPACT",
       "message": "I'm Sienna Elsa, and I am the Head of DC-IMPACT. I am so happy I've managed to come through and become an executive this year! I've always been invested in making a difference in the world, and MUN is something I'm so very passionate about. I hope we can all bring happy and positive energy to the community and enjoy DCMUN.",
       "photo": "assets/execHeadshots/exec photos - Sienna.png", // Add image path, e.g. assets/execHeadshots/exec photos - name.png
@@ -677,3 +679,6 @@ window.DCMUN = {
     }
   ]
 };
+EOF
+
+node --check content.js
