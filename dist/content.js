@@ -10,7 +10,7 @@ window.DCMUN = {
   "theme": "Unrest",
   "themeMessage": {
     "name": "Yushi Zhang",
-    "message": "“The world feels out of our control, even more than usual. Many things that are failing our general population, especially vulnerable minorities. Right now, to be realistic is often associated with being pessimistic, or addressing dissatisfaction. How can we use the unrest caused by this to result in positive progress?”"
+    "message": "“In a time of uncertainty, you will see unrest. You will see a conflict of opinions, and you will see many dissatisfactions from people directed to institutions. Do not be discouraged by these differences. Raise your voice, ask questions and do not be afraid to confront difficult topics. Through adversity, we hope that you are able to persevere, collaborate and find a path for positive progress during an anxious era. ”"
   },
   "welcome": "Doha College Model United Nations (DCMUN) is hosted at Doha College’s Al Wajba campus. DCMUN XVIII takes place from 5 to 7 November 2026. The Saturday afternoon programme takes place at the Mondrian Hotel.",
   "map": {
@@ -103,7 +103,7 @@ window.DCMUN = {
       "code": "GA5",
       "name": "Administration and Budgetary Matters",
       "headChair": "Rishi Sharma",
-      "deputyChairs": ["Izyan Mohammed","Lehara Ranasinghe"],
+      "deputyChairs": ["Izyan Mohammed"],
       "room": "S2 G22",
       "issues": [
         {
@@ -113,7 +113,7 @@ window.DCMUN = {
         },
         {
           "title": "Assessing the Involvement of Private Sector Partnerships with the UN",
-          "chair": "Lehara Ranasinghe & Rishi Sharma",
+          "chair": "Izyan Mohammed & Rishi Sharma",
           "pdf": "https://docs.google.com/document/d/1oXh6TKirxL6ddT9sQPF8wTjFFWSJ6Xj--2iB17uS7z4/edit?usp=drivesdk"
         }
       ]
@@ -422,11 +422,7 @@ window.DCMUN = {
           "pdf": "https://docs.google.com/document/d/1N3hITUH62-zOyBYZU4PHCbYphfyMUmSTCUrdwGPBIsU/edit?usp=drivesdk",
           "chair": "Adil Sahibzada, Arham Shaikh & Ayma Hadi"
         },
-        {
-          "title": "Direction Guide",
-          "pdf": "https://docs.google.com/document/d/1SJxMEe_pq1Wd8J45VIJQ7s1I54CZqAB_yMkaJiQ6HyE/edit?usp=drivesdk",
-          "chair": "Adil Sahibzada, Arham Shaikh & Ayma Hadi"
-        }
+        
       ],
       "issues": [
         {
