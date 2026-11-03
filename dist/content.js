@@ -204,8 +204,8 @@ window.DCMUN = {
         },
         {
           "title": "Addressing the Rise of Ultra-Nationalism and the Impacts on Globalisation",
-          "chair": "",
-          "pdf": ""
+          "chair": "Maria Ali",
+          "pdf": "https://docs.google.com/document/d/1E7k0TaW-ymikalcbetX_6kmXVFCfIQe9q5eFL3Q-dps/edit?usp=share_link"
         }
       ]
     },
