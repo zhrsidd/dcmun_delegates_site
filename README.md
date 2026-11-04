@@ -66,7 +66,7 @@ Each executive card includes a headshot placeholder. To show a photo, add a `pho
 
 ### Map and schedule
 
-Set `map.image` to the official map image path and `map.pdf` to a PDF path. Empty fields show an explicitly labeled placeholder, not a fictional school map. Set `theme` when confirmed. The About paragraph summarizes confirmed conference dates and venues.
+Set `map.image` to the cleaned Al Wajba campus overview image and `map.pdf` to a PDF path. The Overview and Committee layout controls are compact collapsible tabs. The Committee layout shows the mirrored plans in S2 → S3 → S4 order, with Press in the S3 placeholder; searching for a committee highlights its classroom from the `room` value and scrolls to the map. Set `theme` when confirmed. The About paragraph summarizes confirmed conference dates and venues.
 
 To add session details, add objects with `time`, `title`, and `venue` to the relevant day’s `events` array. Times are Qatar local time. The current data contains the confirmed detailed programme for 5–7 November 2026, including registration, breaks and travel time.
 
@@ -78,7 +78,7 @@ Conference dates, venues and all 48 issues across 19 committees: “Conference S
 
 Detailed schedule: “Precise Schedule” tab (`t.0`) in the Google Doc titled “Rough Schedule” (Drive ID `1VPC1QiEHUdl1T7xY_3LDT6VJVn_nqt84TfUAjQClL7k`), retrieved 28 October 2026. The organiser confirmed that this schedule is final despite the document title. Dates and venues are supplied by its “General Schedule” tab. The 20 event titles and intervals follow the precise tab; times are displayed in 24-hour Qatar local time.
 
-Theme and campus map remain labeled placeholders. Committee room allocations are not yet supplied. Internal student records and report progress tracker data are not included in the public site. Design reference: https://github.com/zhrsidd/MUNOS/blob/main/docs/BRAND.md — official palette, Manrope headings, DM Sans body, hairline sections and minimal decoration.
+The overview uses the supplied Doha College campus image, cropped to remove page decoration without resampling it. Committee locations are maintained in the `room` fields in `dist/content.js`. Internal student records and report progress tracker data are not included in the public site. Design reference: https://github.com/zhrsidd/MUNOS/blob/main/docs/BRAND.md — official palette, Manrope headings, DM Sans body, hairline sections and minimal decoration.
 
 `generate.py` records the one-time import; do not re-run it after editing content.js because it regenerates that file.
 

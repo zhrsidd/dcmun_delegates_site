@@ -129,8 +129,8 @@
           <div id="schedule-grid"></div>
           <p class="footnote">Confirmed schedule · All times are Qatar local time.</p>
         </section>
-        <section class="section campus" id="campus">
-          <div>
+        <section class="section campus-map-section" id="campus">
+          <div class="campus-map-heading">
             <h2>Campus map</h2>
             <p class="location">↗ <strong>Doha College</strong>
               <br />
@@ -138,9 +138,25 @@
             </p>
             <div id="map-links"></div>
           </div>
-          <div class="map-panel" id="map-panel">
-            <div class="map-caption">
-              <p>Map to be added.</p>
+          <div class="campus-map-controls" aria-label="Campus map views">
+            <button class="map-view-toggle" type="button" data-map-view="overview" aria-pressed="true" aria-expanded="true" aria-controls="map-content">Overview</button>
+            <button class="map-view-toggle" type="button" data-map-view="layout" aria-pressed="false" aria-expanded="false" aria-controls="map-content">Committee layout</button>
+          </div>
+          <div id="map-content">
+            <div class="map-tools" id="map-tools" hidden>
+              <label for="map-search">FIND A COMMITTEE
+                <input id="map-search" type="search" list="map-committee-options" placeholder="Search by committee name or code…" autocomplete="off" />
+                <datalist id="map-committee-options"></datalist>
+              </label>
+              <p>Select a committee to open its building plan and keep its classroom highlighted.</p>
+            </div>
+            <div class="map-stage" id="map-stage">
+              <div class="map-panel" id="map-panel" aria-live="polite">
+                <div class="map-caption">
+                  <strong>Campus overview</strong>
+                  <p>General campus map to be added.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

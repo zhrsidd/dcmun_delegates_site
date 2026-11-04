@@ -14,7 +14,7 @@ window.DCMUN = {
   },
   "welcome": "Doha College Model United Nations (DCMUN) is hosted at Doha College’s Al Wajba campus. DCMUN XVIII takes place from 5 to 7 November 2026. The Saturday afternoon programme takes place at the Mondrian Hotel.",
   "map": {
-    "image": "",
+    "image": "assets/maps/campus-overview.png",
     "pdf": ""
   },
   "committees": [
