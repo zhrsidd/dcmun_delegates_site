@@ -145,11 +145,12 @@
           <div id="map-content">
             <div class="map-tools" id="map-tools" hidden>
               <label for="map-search">FIND A COMMITTEE
-                <input id="map-search" type="search" list="map-committee-options" placeholder="Search by committee name or code…" autocomplete="off" />
+                <input id="map-search" type="search" list="map-committee-options" placeholder="Search by committee name or code…" autocomplete="off" aria-describedby="map-search-status" />
                 <datalist id="map-committee-options"></datalist>
               </label>
-              <p>Select a committee to open its building plan and keep its classroom highlighted.</p>
+              <p id="map-search-status" role="status">Choose a committee to highlight its room below.</p>
             </div>
+            <p class="map-guide" id="map-guide" hidden><span class="map-legend-swatch" aria-hidden="true"></span> Committee room <span class="map-guide-divider">·</span> Room codes match the labels on campus. Plans are schematic.</p>
             <div class="map-stage" id="map-stage">
               <div class="map-panel" id="map-panel" aria-live="polite">
                 <div class="map-caption">
