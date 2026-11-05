@@ -66,7 +66,8 @@ const mapPlans={
 const svgNode=(name,attrs={},text)=>{const n=document.createElementNS('http://www.w3.org/2000/svg',name);for(const [key,value] of Object.entries(attrs))n.setAttribute(key,value);if(text!==undefined)n.textContent=text;return n;};
 const assignedByRoom=new Map();for(const c of data.committees){const m=(c.room||'').match(/^(S2|S4)\s+(G\d+)$/i);if(m)assignedByRoom.set(`${m[1].toUpperCase()} ${m[2].toUpperCase()}`,c);}
 const committeeOption=document.querySelector('#map-committee-options');for(const c of data.committees){if(c.room){const option=el('option');option.value=`${c.code} · ${c.name}`;committeeOption.append(option);}}
-const pressOption=el('option');pressOption.value='Press';committeeOption.append(pressOption);
+const supportLocations=[{code:'Press',room:'S3'},{code:'Admin',room:'S3'}];
+for(const location of supportLocations){const option=el('option');option.value=location.code;committeeOption.append(option);}
 function committeeFor(building,room){return assignedByRoom.get(`${building} ${room}`);}
 function clearSelected(){mapPanel.querySelectorAll('.map-room.is-selected').forEach(node=>node.classList.remove('is-selected'));}
 function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{viewBox:`0 20 ${plan.width} ${plan.height-200}`,role:'img','aria-labelledby':`map-title-${building}`,'preserveAspectRatio':'xMidYMid meet','data-building':building});svg.append(svgNode('title',{id:`map-title-${building}`},`${building} building floor plan`));
@@ -92,18 +93,20 @@ function drawCombinedLayout(){
   const card=el('section',`combined-building building-${building.toLowerCase()}`);
   card.dataset.building=building;
   const heading=el('div','building-heading');
-  heading.append(el('h3','',building),el('span','',building==='S3'?'Press location':'Ground floor'));
+  heading.append(el('h3','',building),el('span','',building==='S3'?'Press & Admin':'Ground floor'));
   card.append(heading);
   if(building==='S3'){
    const press=el('div','press-location');
-   press.append(el('span','press-mark','P'),el('strong','','Press'),el('p','','Between S2 and S4 on the campus overview.'));
+   press.append(el('p','','Between S2 and S4 on the campus overview.'));
    card.append(press);
   }else card.append(drawPlan(building));
   const directory=el('ul','building-directory');
-  const occupants=building==='S3'?[{code:'Press',name:'Press team',room:'S3'}]:data.committees.filter(c=>(c.room||'').startsWith(building));
+  const occupants=building==='S3'?supportLocations:data.committees.filter(c=>(c.room||'').startsWith(building));
   for(const c of occupants){
    const row=el('li','');row.dataset.committee=c.code;
-   row.append(el('strong','',c.code),el('span','',c.name),el('span','directory-room',c.room));
+   row.append(el('strong','',c.code));
+   if(c.name)row.append(el('span','',c.name));
+   row.append(el('span','directory-room',c.room));
    directory.append(row);
   }
   card.append(directory);layout.append(card);
@@ -121,7 +124,7 @@ function searchCommittee(value){
  const status=document.querySelector('#map-search-status');
  mapPanel.querySelectorAll('.is-selected').forEach(node=>node.classList.remove('is-selected'));
  if(!q){status.textContent='Choose a committee to highlight its room below.';return;}
- const c=q==='press'?{code:'Press',room:'S3'}:data.committees.find(item=>item.room&&(item.code.toLowerCase()===q||item.name.toLowerCase()===q||`${item.code} · ${item.name}`.toLowerCase()===q));
+ const c=supportLocations.find(item=>item.code.toLowerCase()===q)||data.committees.find(item=>item.room&&(item.code.toLowerCase()===q||item.name.toLowerCase()===q||`${item.code} · ${item.name}`.toLowerCase()===q));
  if(!c){status.textContent='No matching committee. Choose a name or code from the suggestions.';return;}
  openMapView('layout');
  const m=c.room.match(/^(S2|S4)\s+(G\d+)$/i);

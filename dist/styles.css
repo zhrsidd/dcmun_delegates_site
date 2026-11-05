@@ -53,11 +53,11 @@
 
 /* Committee wayfinding: campus colours, readable directories and stacked mobile plans. */
 .map-panel.map-floorplan{overflow:visible;border:0;border-radius:0;background:transparent}
-.combined-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,.62fr) minmax(0,1fr);align-items:start;gap:18px;min-width:0;background:transparent}
+.combined-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,.62fr) minmax(0,1fr);align-items:start;gap:14px;min-width:0;background:transparent}
 .combined-building{--building:#237257;--building-tint:#edf6f1;display:block;min-width:0;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--building);border-radius:12px;overflow:hidden;scroll-margin-top:110px}
 .building-s3{--building:#78563f;--building-tint:#f6f1ed;margin-top:0}
 .building-s4{--building:#256e87;--building-tint:#edf5f8}
-.building-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);background:var(--building-tint)}
+.building-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--building-tint)}
 .building-heading h3{margin:0;color:var(--building);font-size:24px;line-height:1.2}
 .building-heading>span{font-size:12px;color:var(--muted)}
 .combined-building>svg{width:100%;height:auto;max-height:none;padding:10px 4px}
@@ -75,26 +75,24 @@
 .exit-label{fill:#4d5c6c}.facility-wall{stroke:#a2afba;stroke-width:4}.facility-label{fill:#4d5c6c}
 .map-room.is-selected .room-shape{fill:#dbeafe;fill-opacity:1;stroke:var(--focus);stroke-width:10;filter:none}
 .map-room.is-selected .room-committee,.map-room.is-selected .room-number{fill:var(--ink)}
-.building-directory{list-style:none;margin:0;padding:0 16px 12px}
-.building-directory li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-top:1px solid var(--line);font-size:12px}
+.building-directory{list-style:none;margin:0;padding:0 16px 8px}
+.building-directory li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:8px 0;border-top:1px solid var(--line);font-size:12px}
 .building-directory li>strong{color:var(--building);font-size:14px}
 .building-directory li>span:not(.directory-room){grid-column:1;overflow-wrap:anywhere;color:var(--muted)}
 .directory-room{grid-column:2;grid-row:1 / span 2;align-self:center;font-weight:650;color:var(--ink);white-space:nowrap}
 .building-directory li.is-selected{background:#eaf2ff;outline:2px solid var(--focus);outline-offset:4px;border-radius:3px}
-.press-location{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:32px 20px}
-.press-mark{display:grid;place-items:center;width:52px;height:52px;background:var(--building-tint);color:var(--building);border-radius:50%;font:750 24px Manrope,Arial,sans-serif}
-.press-location strong{font:750 20px Manrope,Arial,sans-serif;color:var(--building)}
-.press-location p{font-size:12px;color:var(--muted);margin:0;max-width:22ch}
+.press-location{padding:12px 16px}
+.press-location p{font-size:12px;color:var(--muted);margin:0}
 .map-guide{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);margin:0 0 18px}.map-guide[hidden]{display:none}
 .map-legend-swatch{width:14px;height:14px;border:1px solid #237257;background:#edf6f1;border-radius:3px}
 .map-guide-divider{color:#a2afba}.map-view-toggle{min-height:44px}.map-tools input{min-height:44px}
 @media(max-width:800px){
- .combined-layout{grid-template-columns:minmax(0,1fr);min-width:0;gap:20px}
+ .combined-layout{grid-template-columns:minmax(0,1fr);min-width:0;gap:14px}
  .combined-building{width:100%;max-width:560px;justify-self:center}
- .building-heading{padding:16px 20px}.building-heading h3{font-size:26px}
- .building-directory{padding:0 20px 16px}.building-directory li{font-size:13px;padding:14px 0}
+ .building-heading{padding:12px 20px}.building-heading h3{font-size:26px}
+ .building-directory{padding:0 20px 8px}.building-directory li{font-size:13px;padding:9px 0}
  .building-directory li>strong{font-size:15px}
- .press-location{padding:24px 20px}.map-tools label,.map-tools input{width:100%;min-width:0}
+ .press-location{padding:12px 20px}.map-tools label,.map-tools input{width:100%;min-width:0}
  .map-panel.map-floorplan{overflow:visible}.map-guide{align-items:baseline}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.room-shape{transition:none}}
