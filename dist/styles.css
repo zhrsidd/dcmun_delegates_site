@@ -100,3 +100,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.room-shape{transition:none}}
 
 .plan-zone.restroom{stroke:#a2afba;stroke-width:5}
+
+/* Preserve the latest facility label clarity after merging rotated plans. */
+.facility-label{fill:#4d5c6c;font-size:17px;letter-spacing:.05em}.restroom-symbols{opacity:1}

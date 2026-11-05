@@ -85,7 +85,7 @@ window.DCMUN = {
       "name": "Special Political and Decolonization",
       "headChair": "Helen Mangue",
       "deputyChairs": ["Yusef Elaffandi","Maryam Ahmed"],
-      "room": "S2 G21",
+      "room": "S4 G09",
       "issues": [
         {
           "title": "Preventing the Exploitation of Resources and Militarisation of Non-Self-Governing Territories",

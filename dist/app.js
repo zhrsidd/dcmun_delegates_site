@@ -69,23 +69,23 @@ const committeeOption=document.querySelector('#map-committee-options');for(const
 const pressOption=el('option');pressOption.value='Press';committeeOption.append(pressOption);
 function committeeFor(building,room){return assignedByRoom.get(`${building} ${room}`);}
 function clearSelected(){mapPanel.querySelectorAll('.map-room.is-selected').forEach(node=>node.classList.remove('is-selected'));}
-function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{viewBox:`0 200 ${plan.width} ${plan.height-180}`,role:'img','aria-labelledby':`map-title-${building}`,'preserveAspectRatio':'xMidYMid meet','data-building':building});svg.append(svgNode('title',{id:`map-title-${building}`},`${building} building floor plan`));
- const flipRectX=(x,w)=>plan.width-x-w,flipX=x=>plan.width-x;
+function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{viewBox:`0 20 ${plan.width} ${plan.height-200}`,role:'img','aria-labelledby':`map-title-${building}`,'preserveAspectRatio':'xMidYMid meet','data-building':building});svg.append(svgNode('title',{id:`map-title-${building}`},`${building} building floor plan`));
+ const flipRectX=(x,w)=>plan.width-x-w,flipX=x=>plan.width-x,flipRectY=(y,h)=>plan.height-y-h,flipY=y=>plan.height-y;
  svg.append(svgNode('rect',{x:0,y:0,width:plan.width,height:plan.height,class:'plan-background'}));
- for(const [kind,x,y,w,h] of plan.zones)svg.append(svgNode('rect',{x:flipRectX(x,w),y,width:w,height:h,class:`plan-zone ${kind}`}));
- for(const [room,x,y,w,h] of plan.rooms){const c=committeeFor(building,room),rx=flipRectX(x,w),g=svgNode('g',{class:'map-room'+(c?' has-committee':''),'data-room':room,'data-building':building});g.append(svgNode('rect',{x:rx,y,width:w,height:h,class:'room-shape'}),svgNode('text',{x:rx+24,y:y+47,class:'room-number'},room));if(c){const words=c.code.split(' '),fontSize=c.code.length>10?29:c.code.length>6?36:43,center=y+h*.58;words.forEach((word,i)=>g.append(svgNode('text',{x:rx+w/2,y:center+(i-(words.length-1)/2)*fontSize*1.48,class:'room-committee',style:`font-size:${fontSize}px`},word)));}svg.append(g);}
+ for(const [kind,x,y,w,h] of plan.zones)svg.append(svgNode('rect',{x:flipRectX(x,w),y:flipRectY(y,h),width:w,height:h,class:`plan-zone ${kind}`}));
+ for(const [room,x,y,w,h] of plan.rooms){const c=committeeFor(building,room),rx=flipRectX(x,w),ry=flipRectY(y,h),g=svgNode('g',{class:'map-room'+(c?' has-committee':''),'data-room':room,'data-building':building});g.append(svgNode('rect',{x:rx,y:ry,width:w,height:h,class:'room-shape'}),svgNode('text',{x:rx+24,y:ry+47,class:'room-number'},room));if(c){const words=c.code.split(' '),fontSize=c.code.length>10?29:c.code.length>6?36:43,center=ry+h*.58;words.forEach((word,i)=>g.append(svgNode('text',{x:rx+w/2,y:center+(i-(words.length-1)/2)*fontSize*1.48,class:'room-committee',style:`font-size:${fontSize}px`},word)));}svg.append(g);}
  const title=svgNode('text',{x:plan.width/2,y:68,class:'plan-title'},building);svg.append(title);
  if(building==='S2'){
-  const ax=flipX(73),ex1=flipX(1145),ex2=flipX(1145);svg.append(svgNode('text',{x:ax,y:798,class:'atrium-label','text-anchor':'end'},'ATRIUM'),svgNode('text',{x:ex1,y:485,class:'exit-label',transform:`rotate(-90 ${ex1} 485)`},'EXIT'),svgNode('text',{x:ex2,y:1370,class:'exit-label',transform:`rotate(-90 ${ex2} 1370)`},'EXIT'));
-  addFacilityDetails(svg,'S2',plan.width);addRestroomSymbols(svg,flipX(210),1180,1.05,true);
+  const ax=flipX(73),ex1=flipX(1145),ex2=flipX(1145),ay=flipY(798),ey1=flipY(485),ey2=flipY(1370);svg.append(svgNode('text',{x:ax,y:ay,class:'atrium-label','text-anchor':'end'},'ATRIUM'),svgNode('text',{x:ex1,y:ey1,class:'exit-label',transform:`rotate(-90 ${ex1} ${ey1})`},'EXIT'),svgNode('text',{x:ex2,y:ey2,class:'exit-label',transform:`rotate(-90 ${ex2} ${ey2})`},'EXIT'));
+  addFacilityDetails(svg,'S2',plan.width,plan.height);addRestroomSymbols(svg,flipX(210),flipY(1180),1.3,true);
  }else{
-  const ax=flipX(925),ex1=flipX(95),ex2=flipX(95);svg.append(svgNode('text',{x:ax,y:772,class:'atrium-label','text-anchor':'end'},'ATRIUM'),svgNode('text',{x:ex1,y:355,class:'exit-label',transform:`rotate(-90 ${ex1} 355)`},'EXIT'),svgNode('text',{x:ex2,y:1460,class:'exit-label',transform:`rotate(-90 ${ex2} 1460)`},'EXIT'));
-  addFacilityDetails(svg,'S4',plan.width);addRestroomSymbols(svg,flipX(890),1190,.9,true);
+  const ax=flipX(925),ex1=flipX(95),ex2=flipX(95),ay=flipY(772),ey1=flipY(355),ey2=flipY(1460);svg.append(svgNode('text',{x:ax,y:ay,class:'atrium-label','text-anchor':'end'},'ATRIUM'),svgNode('text',{x:ex1,y:ey1,class:'exit-label',transform:`rotate(-90 ${ex1} ${ey1})`},'EXIT'),svgNode('text',{x:ex2,y:ey2,class:'exit-label',transform:`rotate(-90 ${ex2} ${ey2})`},'EXIT'));
+  addFacilityDetails(svg,'S4',plan.width,plan.height);addRestroomSymbols(svg,flipX(890),flipY(1190),1.2,true);
  }
  return svg;
 }
 function addRestroomSymbols(svg,cx,cy,scale,mirrored=false){const group=svgNode('g',{class:'restroom-symbols',transform:`translate(${cx} ${cy}) scale(${scale})`});const people=mirrored?[[48,'#256e87'],[-48,'#78563f']]:[[-48,'#256e87'],[48,'#78563f']];for(const [x,color] of people){group.append(svgNode('circle',{cx:x,cy:-35,r:13,fill:'none',stroke:color,'stroke-width':8}),svgNode('path',{d:`M ${x} -19 L ${x} 19 M ${x} -5 L ${x-22} 14 M ${x} -5 L ${x+22} 14 M ${x} 19 L ${x-18} 51 M ${x} 19 L ${x+18} 51`,fill:'none',stroke:color,'stroke-width':8,'stroke-linecap':'round'}));}svg.append(group);}
-function addFacilityDetails(svg,building,width){const line=(x1,y1,x2,y2)=>svg.append(svgNode('line',{x1:width-x1,y1,x2:width-x2,y2,class:'facility-wall'}));const label=(x,y)=>svg.append(svgNode('text',{x:width-x,y,class:'facility-label'},'RESTROOMS'));if(building==='S2'){line(137,553,137,744);line(51,625,137,625);line(137,1110,137,1288);line(350,1100,350,1288);label(157,605);label(151,1130);}else{line(866,522,866,727);line(948,522,948,727);line(1025,522,1025,727);line(785,617,1088,617);line(785,1160,1088,1160);line(1002,1087,1002,1287);label(869,574);label(718,1128);}}
+function addFacilityDetails(svg,building,width,height){const label=(x,y)=>svg.append(svgNode('text',{x:width-x,y:height-y,class:'facility-label'},'RESTROOMS'));if(building==='S2'){label(157,605);label(151,1263);}else{label(869,574);label(869,1248);}}
 function drawCombinedLayout(){
  const layout=el('div','combined-layout');
  for(const building of ['S2','S3','S4']){
