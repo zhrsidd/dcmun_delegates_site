@@ -66,9 +66,10 @@ const mapPlans={
 const svgNode=(name,attrs={},text)=>{const n=document.createElementNS('http://www.w3.org/2000/svg',name);for(const [key,value] of Object.entries(attrs))n.setAttribute(key,value);if(text!==undefined)n.textContent=text;return n;};
 const assignedByRoom=new Map();for(const c of data.committees){const m=(c.room||'').match(/^(S2|S4)\s+(G\d+)$/i);if(m)assignedByRoom.set(`${m[1].toUpperCase()} ${m[2].toUpperCase()}`,c);}
 const committeeOption=document.querySelector('#map-committee-options');for(const c of data.committees){if(c.room){const option=el('option');option.value=`${c.code} · ${c.name}`;committeeOption.append(option);}}
+const pressOption=el('option');pressOption.value='Press';committeeOption.append(pressOption);
 function committeeFor(building,room){return assignedByRoom.get(`${building} ${room}`);}
 function clearSelected(){mapPanel.querySelectorAll('.map-room.is-selected').forEach(node=>node.classList.remove('is-selected'));}
-function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{viewBox:`0 0 ${plan.width} ${plan.height}`,role:'img','aria-labelledby':`map-title-${building}`,'preserveAspectRatio':'xMidYMid meet','data-building':building});svg.append(svgNode('title',{id:`map-title-${building}`},`${building} building floor plan`));
+function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{viewBox:`0 20 ${plan.width} ${plan.height-200}`,role:'img','aria-labelledby':`map-title-${building}`,'preserveAspectRatio':'xMidYMid meet','data-building':building});svg.append(svgNode('title',{id:`map-title-${building}`},`${building} building floor plan`));
  const flipRectX=(x,w)=>plan.width-x-w,flipX=x=>plan.width-x,flipRectY=(y,h)=>plan.height-y-h,flipY=y=>plan.height-y;
  svg.append(svgNode('rect',{x:0,y:0,width:plan.width,height:plan.height,class:'plan-background'}));
  for(const [kind,x,y,w,h] of plan.zones)svg.append(svgNode('rect',{x:flipRectX(x,w),y:flipRectY(y,h),width:w,height:h,class:`plan-zone ${kind}`}));
@@ -83,17 +84,56 @@ function drawPlan(building){const plan=mapPlans[building],svg=svgNode('svg',{vie
  }
  return svg;
 }
-function addRestroomSymbols(svg,cx,cy,scale,mirrored=false){const group=svgNode('g',{class:'restroom-symbols',transform:`translate(${cx} ${cy}) scale(${scale})`});const people=mirrored?[[48,'#1378e8'],[-48,'#e600b5']]:[[-48,'#1378e8'],[48,'#e600b5']];for(const [x,color] of people){group.append(svgNode('circle',{cx:x,cy:-35,r:13,fill:'none',stroke:color,'stroke-width':8}),svgNode('path',{d:`M ${x} -19 L ${x} 19 M ${x} -5 L ${x-22} 14 M ${x} -5 L ${x+22} 14 M ${x} 19 L ${x-18} 51 M ${x} 19 L ${x+18} 51`,fill:'none',stroke:color,'stroke-width':8,'stroke-linecap':'round'}));}svg.append(group);}
+function addRestroomSymbols(svg,cx,cy,scale,mirrored=false){const group=svgNode('g',{class:'restroom-symbols',transform:`translate(${cx} ${cy}) scale(${scale})`});const people=mirrored?[[48,'#256e87'],[-48,'#78563f']]:[[-48,'#256e87'],[48,'#78563f']];for(const [x,color] of people){group.append(svgNode('circle',{cx:x,cy:-35,r:13,fill:'none',stroke:color,'stroke-width':8}),svgNode('path',{d:`M ${x} -19 L ${x} 19 M ${x} -5 L ${x-22} 14 M ${x} -5 L ${x+22} 14 M ${x} 19 L ${x-18} 51 M ${x} 19 L ${x+18} 51`,fill:'none',stroke:color,'stroke-width':8,'stroke-linecap':'round'}));}svg.append(group);}
 function addFacilityDetails(svg,building,width,height){const label=(x,y)=>svg.append(svgNode('text',{x:width-x,y:height-y,class:'facility-label'},'RESTROOMS'));if(building==='S2'){label(157,605);label(151,1263);}else{label(869,574);label(869,1248);}}
-function drawCombinedLayout(){const layout=el('div','combined-layout');const left=el('div','combined-building building-s2');left.append(drawPlan('S2'));const center=el('div','combined-building building-s3');const svg=svgNode('svg',{viewBox:'0 0 680 600',role:'img','aria-label':'S3 building placeholder for Press'});svg.append(svgNode('rect',{x:20,y:150,width:640,height:340,rx:0,class:'s3-placeholder'}),svgNode('text',{x:340,y:284,class:'s3-title'},'S3'),svgNode('text',{x:340,y:356,class:'s3-committee'},'Press'));center.append(svg);const right=el('div','combined-building building-s4');right.append(drawPlan('S4'));layout.append(left,center,right);mapPanel.replaceChildren(layout);}
+function drawCombinedLayout(){
+ const layout=el('div','combined-layout');
+ for(const building of ['S2','S3','S4']){
+  const card=el('section',`combined-building building-${building.toLowerCase()}`);
+  card.dataset.building=building;
+  const heading=el('div','building-heading');
+  heading.append(el('h3','',building),el('span','',building==='S3'?'Press location':'Ground floor'));
+  card.append(heading);
+  if(building==='S3'){
+   const press=el('div','press-location');
+   press.append(el('span','press-mark','P'),el('strong','','Press'),el('p','','Between S2 and S4 on the campus overview.'));
+   card.append(press);
+  }else card.append(drawPlan(building));
+  const directory=el('ul','building-directory');
+  const occupants=building==='S3'?[{code:'Press',name:'Press team',room:'S3'}]:data.committees.filter(c=>(c.room||'').startsWith(building));
+  for(const c of occupants){
+   const row=el('li','');row.dataset.committee=c.code;
+   row.append(el('strong','',c.code),el('span','',c.name),el('span','directory-room',c.room));
+   directory.append(row);
+  }
+  card.append(directory);layout.append(card);
+ }
+ mapPanel.replaceChildren(layout);
+}
 let activeMapView='overview',mapExpanded=true;
 function renderMap(view){clearSelected();if(view==='overview'){mapPanel.className='map-panel map-overview';if(mapImage){const img=el('img');img.src=mapImage;img.alt='Doha College Al Wajba campus overview map';mapPanel.replaceChildren(img);}else mapPanel.innerHTML='<div class="map-caption"><span class="map-popup-kicker">DOHA COLLEGE · AL WAJBA CAMPUS</span><strong>Campus overview</strong><p>General campus map to be added.</p></div>';return;}mapPanel.className='map-panel map-floorplan';drawCombinedLayout();}
-function syncMapView(){mapContent.hidden=!mapExpanded;mapTools.hidden=!mapExpanded||activeMapView!=='layout';document.querySelectorAll('.map-view-toggle').forEach(button=>{const active=button.dataset.mapView===activeMapView;button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-expanded',String(active&&mapExpanded));});}
+function syncMapView(){document.querySelector('#map-guide').hidden=!mapExpanded||activeMapView!=='layout';mapContent.hidden=!mapExpanded;mapTools.hidden=!mapExpanded||activeMapView!=='layout';document.querySelectorAll('.map-view-toggle').forEach(button=>{const active=button.dataset.mapView===activeMapView;button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-expanded',String(active&&mapExpanded));});}
 function setMapView(view){if(view===activeMapView){mapExpanded=!mapExpanded;}else{activeMapView=view;mapExpanded=true;renderMap(view);}syncMapView();}
 function openMapView(view){if(activeMapView!==view){activeMapView=view;renderMap(view);}mapExpanded=true;syncMapView();}
 document.querySelectorAll('.map-view-toggle').forEach(button=>button.addEventListener('click',()=>setMapView(button.dataset.mapView)));
-function searchCommittee(value){const q=value.trim().toLowerCase(),c=data.committees.find(item=>item.room&&(item.code.toLowerCase()===q||item.name.toLowerCase()===q||`${item.code} · ${item.name}`.toLowerCase()===q));if(!c)return;const m=c.room.match(/^(S2|S4)\s+(G\d+)$/i);if(!m)return;const building=m[1].toUpperCase(),room=m[2].toUpperCase();openMapView('layout');mapPanel.querySelectorAll('.map-room.is-selected').forEach(node=>node.classList.remove('is-selected'));mapPanel.querySelector(`.map-room[data-building="${building}"][data-room="${room}"]`)?.classList.add('is-selected');document.querySelector('#campus').scrollIntoView({behavior:'smooth',block:'start'});}
+function searchCommittee(value){
+ const q=value.trim().toLowerCase();
+ const status=document.querySelector('#map-search-status');
+ mapPanel.querySelectorAll('.is-selected').forEach(node=>node.classList.remove('is-selected'));
+ if(!q){status.textContent='Choose a committee to highlight its room below.';return;}
+ const c=q==='press'?{code:'Press',room:'S3'}:data.committees.find(item=>item.room&&(item.code.toLowerCase()===q||item.name.toLowerCase()===q||`${item.code} · ${item.name}`.toLowerCase()===q));
+ if(!c){status.textContent='No matching committee. Choose a name or code from the suggestions.';return;}
+ openMapView('layout');
+ const m=c.room.match(/^(S2|S4)\s+(G\d+)$/i);
+ if(m)mapPanel.querySelector(`.map-room[data-building="${m[1].toUpperCase()}"][data-room="${m[2].toUpperCase()}"]`)?.classList.add('is-selected');
+ const row=[...mapPanel.querySelectorAll('[data-committee]')].find(node=>node.dataset.committee===c.code);
+ row?.classList.add('is-selected');
+ status.textContent=`${c.code} · ${c.room}. Highlighted below.`;
+ const card=row?.closest('.combined-building');
+ card?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+}
 mapSearch.addEventListener('change',()=>searchCommittee(mapSearch.value));
+mapSearch.addEventListener('input',()=>{if(!mapSearch.value)searchCommittee('');});
 renderMap('overview');syncMapView();
 const menu=document.querySelector('#menu'),nav=document.querySelector('#nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});
 
