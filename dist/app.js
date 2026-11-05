@@ -105,7 +105,6 @@ function drawCombinedLayout(){
   for(const c of occupants){
    const row=el('li','');row.dataset.committee=c.code;
    row.append(el('strong','',c.code));
-   if(c.name)row.append(el('span','',c.name));
    row.append(el('span','directory-room',c.room));
    directory.append(row);
   }
